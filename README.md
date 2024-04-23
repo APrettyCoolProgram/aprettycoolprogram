@@ -1,3 +1,5 @@
 # A Pretty Cool Program
 
-Random stuff.
+## What's here
+
+[Development guidelines](/development%20guidelines/README.md)
