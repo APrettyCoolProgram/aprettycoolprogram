@@ -3,8 +3,8 @@
 ## Development comments
 
 ```text
-\\ Development comments contain important information that should not be removed
-\\ from the source code, and have a maximum width of 80 characters.
+// Development comments contain important information that should not be removed
+// from the source code, and have a maximum width of 80 characters.
 ```
 
 ## Narrative comments
