@@ -34,8 +34,10 @@ Console projects should look like this:
 </PropertyGroup>
 ```
 
-
-
 ## Multi-project solutions
 
 If a solution has multiple projects, each project needs to be published.
+
+# More
+
+https://learn.microsoft.com/en-us/dotnet/core/deploying/
