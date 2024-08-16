@@ -1,20 +1,161 @@
-# About Abatab XML Documentation
+XML documentation guidelines
 
-Abatab uses XML documentation to:
-- Provide IntelliSense content
-- Generate API documentation via [DocFX](https://dotnet.github.io/docfx/)
+- [XML documentation guidelines](#xml-documentation-guidelines)
+	- [XML documentation standards](#xml-documentation-standards)
+	- [Documentation timestamps](#documentation-timestamps)
+- [Source code XML documentation](#source-code-xml-documentation)
+- [External XML documentation](#external-xml-documentation)
+- [XML documentation formatting](#xml-documentation-formatting)
+	- [Text Formatting](#text-formatting)
+	- [Special Characters](#special-characters)
+- [XML documentation examples](#xml-documentation-examples)
+	- [\<code\> and \<c\> tags](#code-and-c-tags)
+	- [\<example\> tag](#example-tag)
+	- [\<remarks\> tag](#remarks-tag)
+	- [\<see\> tag](#see-tag)
+	- [\<seealso\> tag](#seealso-tag)
+	- [\<value\> tag](#value-tag)
+- [Complete XML documentation example](#complete-xml-documentation-example)
 
-# Standards
+# XML documentation guidelines
+
+Projects should use both *source code* and *external* XML documentation.
+
+**Source code XML documentation** should provide all *required* information about a component.
+
+**External XML documentation** should provide *non-essential but helpful* detailed information, examples, and other resources for a component.
+
+## What should be documented <!-- omit in toc -->
+
+The following source code components should be commented:
+
+- Classes
+- Properties
+- Methods
+
+## XML documentation standards
 
 In addition to [Microsoft's XML documentation standards](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/xmldoc/):
 
-- XML documentation comments are in the source code, and not in external files
 - All publicly visible types and their public members are documented.
 - It is recommended that private members also be documented.
-- XML documentation are written using complete sentences ending, with full stops.
+- XML documentation is written using complete sentences ending, with full stops.
 - XML documentation has a maximum width of 120 characters
+- XML documentation tags should be properly indented
 
-# Formatting
+Also, please see [Microsoft's recommended XML tags for C#](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/xmldoc/recommended-tags).
+
+## Documentation timestamps
+
+Each file should contain an HTML comment at the top of the file indicating the last changed date:
+
+```html
+<!--
+    u240805.0855_documentation
+-->
+```
+
+# Source code XML documentation
+
+The following XML documentation tags are used directly in the *source code*, since they are helpful when viewing the source code.
+
+- `<summary>`
+- `<param>`
+- `<returns>`
+
+## Source code documentation structure <!-- omit in toc -->
+
+Source code XML documentation should follow these guidelines:
+
+- Comments (including tags) should fit on a single line
+- Comments (not including tags) should not exceed 120 characters
+
+## Example of source code XML documentation <!-- omit in toc -->
+
+```csharp
+/// <summary>Does a thing.</summary>
+/// <param name="aParameter">A parameter.</param>
+/// <remarks>This thing does a thing.</remarks>
+/// <returns>A bunch of things.</returns>
+```
+
+# External XML documentation
+
+The following XML documentation tags are stored in external files, in order to keep the source code cleaner/more readable:
+
+- `<code>`
+- `<example>`
+- `<exception>`
+- `<see>`
+- `<seealso>`
+- `<value>`
+
+If a `<remarks>` entry is longer than a single line, it should contained in an external file, not the source code.
+
+## External files <!-- omit in toc -->
+
+Each *namespace* has it's own external XML documentation file containing the external XML documentation for all *classes* in the namespace. The file is located in the project's `./XmlDoc/` folder with the syntax of `%namespace%_doc.xml`
+
+For example, XML documentation for `Namespace.Thing` namespace is located in the `./XmlDoc/Namespace.Thing_doc.xml` file, and contains all of the external XML documentation for all of the classes in the `Namespace.Thing` namespace.
+
+## Example of source code XML documentation <!-- omit in toc -->
+
+```xml
+<!--
+    u240805.0855_documentation
+-->
+
+<Doc>
+    <Sec name="ClassName">
+        <MethodName>
+            <remarks>
+                <para>
+                    This is a list
+                    <list type="bullet">
+                        <item>
+                            Bullet 1
+                        </item>
+                        <item>
+                            Bullet 2
+                        </item>
+                    </list>
+                    <br/>
+                    More comments.
+                    <br/>
+                    More comments.
+                </para>
+            </remarks>
+        </MethodName>
+        <PropertyName>
+            <remarks>
+                <para>
+                    Remarks about the property.
+                </para>
+            </remarks>
+        </PropertyName>
+    </Sec>
+</Doc>
+```
+
+## Referencing external XML documentation in the source code <!-- omit in toc -->
+
+To reference external XML documentation in the source code, add the following line at the end of the source code XML documentation:
+
+```csharp
+/// <include file='XMLDoc/FileName_doc.xml' path='Doc/Sec[@name="ClassName"]/MethodName/*'/>
+```
+
+For example:
+
+```csharp
+/// <summary>Does a thing.</summary>
+/// <param name="aParameter">A parameter.</param>
+/// <param name="anotherParameter">Another paramtere.</param>
+/// <returns>Some things.</returns>
+/// <include file='XmlDoc/FileName_doc.xml' path='Doc/Sec[@name="ClassName"]/MethodName/*'/>
+```
+
+# XML documentation formatting
 
 ## Text Formatting
 
@@ -32,47 +173,101 @@ XML documentation can include the following special characters:
 - Lesser than: `&lt;`
 - Space: `&nbsp;`
 
-# Tags
+# XML documentation examples
 
-Abatab XML documentation use [Microsoft's recommended XML tags for C#](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/xmldoc/recommended-tags).
+## &lt;code&gt; and &lt;c&gt; tags
 
-## &lt;summary&gt;
+To insert a single line of code, or inline code, `<c>just put the code between these</c>`
 
-`<summary>` should be a single line, and is a short description of whatever they precede (e.g., classes and methods).
-
-Example:
+To create a code block:
 
 ```csharp
-/// <summary>Compares two numbers to determine if they are the same.</summary>
+<code>
+	Put the code
+	in
+	a code block  
+<code>
 ```
 
-## &lt;param&gt;
+## &lt;example&gt; tag
 
-`<param` tags should describe each parameter, and be contained on a single line.
+Example comments don't show in Visual Studio (?), but look fine in generated documentation.
 
-Example:
+An example of...uh...an example XML comment:
 
 ```csharp
-/// <param name="numberOne">The first number.</param>
-/// <param name="numberTwo">The second number.</param>
+/// <example>
+///     Here is an example of the code:
+///     <code>
+///     if(numberOne == numberTwo)
+///     {
+///         return true;
+///     }
+///     else
+///     {
+///         return false;
+///     }
+///     </code>
+/// </example>
 ```
 
-## &lt;remarks&gt;
+## &lt;list&gt; tag <!-- omit in toc -->
 
-`<remarks>` are optional, and should give additional, important information.
+### Bullet list <!-- omit in toc -->
 
-Remarks should be enclosed in `<remarks></remarks>` tags, even if they are a single line.
+Bulleted lists should follow these guidelines:
 
-Lengthy remarks should be split into paragraphs using the `<para>` tag.
+- All items (including tags) should fit on a single line
+- Item text should not exceed 120 characters
+- Items should not end, or contain, periods
+- Proper indenting should be used
 
-In general, remarks should be a simple bullet list:
-
-```csharp
-/// <remarks>
-///     - Item 1
-///     - Item 2
-/// </remarks>
+```xml
+<para>
+    An introduction:
+    <list type="bullet">
+      <item>Bullet 1</item>
+      <item>Bullet 1</item>
+      <item>Bullet 1</item>
+    </list>
+</para>
 ```
+
+### Numbered list <!-- omit in toc -->
+
+TBA
+
+### Tables <!-- omit in toc -->
+
+Tables should follow these guidelines:
+
+- An optional `listheader` may be used
+- All items (including tags) should fit on a single line
+- Item text should not exceed 120 characters
+- Items should not end, or contain, periods
+- Proper indenting should be used
+
+```xml
+<para>
+    An introduction:
+    <list type="table">
+        <listheader>
+            <term>Term header</term>
+            <description>Description header</description>
+        </listheader>
+        <item>
+            <term>Term 1</term>
+            <description>Description 1</description>
+        </item>
+        <item>
+            <term>Term 2</term>
+            <description>Description 3</description>
+        </item>
+    </list>
+</para>
+```
+
+## &lt;remarks&gt; tag
 
 Remarks can contain complex lists:
 
@@ -130,53 +325,19 @@ Remarks can contain tables, but they kind of look wonky in Visual Studio (but lo
 /// </remarks>
 ```
 
-## &lt;c&gt; and &lt;code&gt;
-
-To insert a single line of code, or inline code, `<c>just put the code between these</c>`
-
-To create a code block
+## &lt;see&gt; tag
 
 ```csharp
-<code>
-	Put the code
-	in
-	a code block  
-<code>
+Please see the <see href="github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#avatar-optionobject">Tingen documentation</see> for more information.
 ```
 
-## &lt;example&gt;
-
-Example comments don't show in Visual Studio (?), but look fine in DocFX.
-
-An example of...uh...an example XML comment:
+## &lt;seealso&gt; tag
 
 ```csharp
-/// <example>
-///     Here is an example of the code:
-///     <code>
-///     if(numberOne == numberTwo)
-///     {
-///         return true;
-///     }
-///     else
-///     {
-///         return false;
-///     }
-///     </code>
-/// </example>
+<seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#avatar-system-codes">System Codes</seealso>
 ```
 
-## &lt;returns&gt;
-
-The `<returns>` content should be short, and contained to a single line.
-
-Example:
-
-```csharp
-/// <returns>A boolean value.</returns>
-```
-
-## &lt;value&gt;
+## &lt;value&gt; tag
 
 The `<value>` tag defines a value for something.
 
@@ -186,7 +347,28 @@ Example:
 /// <value>Default value is <c>false</c></value>
 ```
 
-# Example
+
+<!-- 
+
+<paramref name="ReturnOptionObject"/>
+
+See <see cref="GetVersion()"/> to add doubles.
+
+<seealso cref="GetVersion()"/>
+
+<i>Module</i>
+
+<see cref="member"/>
+<see cref="member">Link text</see>
+<see href="link">Link Text</see>
+<see langword="keyword"/>
+
+<seealso cref="member"/>
+
+<seealso href="link">Link Text</seealso>
+ -->
+
+# Complete XML documentation example
 
 This example of an XML documentation comment details the correct tag order:
 
@@ -257,29 +439,3 @@ This example of an XML documentation comment details the correct tag order:
 /// <returns>A boolean of true or false.</returns>
 /// <value>Default value is <c>false</c></value>
 ```
-
-This belongs somewhere:
-
-```csharp
-/// <summary>Executing assembly name for log files.</summary>
-/// <remarks>
-///     - The executing assembly is defined at the start of the class so it can be easily used throughout the
-///       method when creating log files.
-/// </remarks>
-``````
-
-
-<br>
-<br>
-
-***
-
-<div align="center">
-	<h6>
-		This document is part of the <a href="https://spectrum-health-systems.github.io/Abatab-Documentation-Project/">Abatab Documentation Project</a>
-		<br>
-		<sub style="color:DarkSlateGrey;">
-			Last updated: <b>November 6, 2023</b> [b231106.1057]
-		</sub>
-	</h6>
-</div>
