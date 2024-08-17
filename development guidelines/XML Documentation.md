@@ -105,9 +105,13 @@ For example, XML documentation for `Namespace.Thing` namespace is located in the
     u240805.0855_documentation
 -->
 
-<Doc>
-    <Sec name="ClassName">
-        <MethodName>
+<%Namespace%>
+
+	<!--
+		%Namespace%.%ClassName%.cs
+	-->
+    <Cs name="%ClassName%">
+        <%MethodName%>
             <remarks>
                 <para>
                     This is a list
@@ -125,16 +129,16 @@ For example, XML documentation for `Namespace.Thing` namespace is located in the
                     More comments.
                 </para>
             </remarks>
-        </MethodName>
-        <PropertyName>
+        </%MethodName%>
+        <%PropertyName%>
             <remarks>
                 <para>
                     Remarks about the property.
                 </para>
             </remarks>
-        </PropertyName>
-    </Sec>
-</Doc>
+        </%PropertyName%>
+    </Cs>
+</%Namespace%>
 ```
 
 ## Referencing external XML documentation in the source code <!-- omit in toc -->
@@ -142,7 +146,7 @@ For example, XML documentation for `Namespace.Thing` namespace is located in the
 To reference external XML documentation in the source code, add the following line at the end of the source code XML documentation:
 
 ```csharp
-/// <include file='XMLDoc/FileName_doc.xml' path='Doc/Sec[@name="ClassName"]/MethodName/*'/>
+/// <include file='XmlDoc/%Namespace%_doc.xml' path='%Namespace%/Cs[@name="%ClassName%"]/%MethodName%/*'/>
 ```
 
 For example:
@@ -152,7 +156,7 @@ For example:
 /// <param name="aParameter">A parameter.</param>
 /// <param name="anotherParameter">Another paramtere.</param>
 /// <returns>Some things.</returns>
-/// <include file='XmlDoc/FileName_doc.xml' path='Doc/Sec[@name="ClassName"]/MethodName/*'/>
+/// <include file='XmlDoc/%Namespace%_doc.xml' path='%Namespace%/Cs[@name="%ClassName%"]/%MethodName%/*'/>
 ```
 
 # XML documentation formatting
@@ -182,16 +186,17 @@ To insert a single line of code, or inline code, `<c>just put the code between t
 To create a code block:
 
 ```csharp
-<code>
-	Put the code
-	in
-	a code block  
-<code>
+/// <code>
+///		if (i = 3}
+///		{
+///			print "Hello world!"
+///		}
+/// <code>
 ```
 
 ## &lt;example&gt; tag
 
-Example comments don't show in Visual Studio (?), but look fine in generated documentation.
+Example comments don't show in Visual Studio, but look fine in generated documentation.
 
 An example of...uh...an example XML comment:
 
