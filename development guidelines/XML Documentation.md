@@ -187,10 +187,10 @@ To create a code block:
 
 ```csharp
 /// <code>
-///		if (i = 3}
-///		{
-///			print "Hello world!"
-///		}
+///	  if (i = 3}
+///	  {
+///	    print "Hello world!"
+///	  }
 /// <code>
 ```
 
@@ -204,14 +204,14 @@ An example of...uh...an example XML comment:
 /// <example>
 ///     Here is an example of the code:
 ///     <code>
-///			if(numberOne == numberTwo)
-///			{
-///         	return true;
-///     	}
-///     	else
-///     	{
-///         	return false;
-///     	}
+///		  if(numberOne == numberTwo)
+///		  {
+///         return true;
+///       }
+///       else
+///       {
+///         return false;
+///       }
 ///     </code>
 /// </example>
 ```
