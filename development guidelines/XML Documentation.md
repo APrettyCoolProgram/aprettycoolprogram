@@ -204,14 +204,14 @@ An example of...uh...an example XML comment:
 /// <example>
 ///     Here is an example of the code:
 ///     <code>
-///     if(numberOne == numberTwo)
-///     {
-///         return true;
-///     }
-///     else
-///     {
-///         return false;
-///     }
+///			if(numberOne == numberTwo)
+///			{
+///         	return true;
+///     	}
+///     	else
+///     	{
+///         	return false;
+///     	}
 ///     </code>
 /// </example>
 ```
