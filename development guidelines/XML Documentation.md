@@ -39,19 +39,24 @@ In addition to [Microsoft's XML documentation standards](https://learn.microsoft
 
 - All publicly visible types and their public members are documented.
 - It is recommended that private members also be documented.
+- It is recommended that comment text length not exceed 85 characters.
 - XML documentation is written using complete sentences ending, with full stops.
-- XML documentation has a maximum width of 120 characters
-- XML documentation tags should be properly indented
+- XML documentation has a maximum width of 120 characters.
+- XML documentation tags should be properly indented.
+- Italics may be used to bring attention to important information.
+- Terms in bold (`<b>Term</b>`) must be accompanied by a `<seealso>` tag.
 
 Also, please see [Microsoft's recommended XML tags for C#](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/xmldoc/recommended-tags).
 
 ## Documentation timestamps
 
-Each file should contain an HTML comment at the top of the file indicating the last changed date:
+Each file should contain an HTML comment at the top of the file indicating the last changed date, and file description:
 
 ```html
 <!--
     u240805.0855_documentation
+	
+	Description of XML documentation file
 -->
 ```
 
@@ -223,7 +228,7 @@ An example of...uh...an example XML comment:
 Bulleted lists should follow these guidelines:
 
 - All items (including tags) should fit on a single line
-- Item text should not exceed 120 characters
+- It is recommended that item text not exceed 85 characters, and should not exceed 120 characters
 - Items should not end, or contain, periods
 - Proper indenting should be used
 
@@ -248,7 +253,7 @@ Tables should follow these guidelines:
 
 - An optional `listheader` may be used
 - All items (including tags) should fit on a single line
-- Item text should not exceed 120 characters
+- It is recommended that item text not exceed 85 characters, and should not exceed 120 characters
 - Items should not end, or contain, periods
 - Proper indenting should be used
 
