@@ -10,19 +10,11 @@
   * [File headers](./profile/development-guidelines/file-headers.md)
   * [Methods](./profile/development-guidelines/methods.md)
   * [Syntax and formatting](./profile/development-guidelines/syntax-and-formatting.md)
-  * [Versioning](./development%20guidelines/versioning.md)
-  * [XML documentation](./development%20guidelines/xml-documentation.md)
+  * [Versioning](./profile/development-guidelines/versioning.md)
+  * [XML documentation](./profile/development-guidelines/xml-documentation.md)
 
 ### How-To
 
-* Setup a Visual Studio 2022 environment
+* [Setup a Visual Studio 2022 environment](./profile/how-to/visual-studio-community-2022-setup/visual-studio-community-2022-setup.md)
 * Setup a Visual Studio Code environment
-* Publish a Visual Studio 2022 solution as a single file
-* 
-
-
-
-
-
-
-[Development guidelines](/development%20guidelines/README.md)
+* [Publish a Visual Studio 2022 solution as a single file](./profile/how-to/visual-studio-publish-single-file/visual-studio-publish-single-file.md)
