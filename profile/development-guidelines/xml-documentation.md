@@ -25,7 +25,7 @@ Projects should use both *source code* and *external* XML documentation.
 
 **External XML documentation** should provide *non-essential but helpful* detailed information, examples, and other resources for a component.
 
-## What should be documented <!-- omit in toc -->
+## What should be documented<!-- omit in toc -->
 
 The following source code components should be commented:
 
@@ -68,14 +68,14 @@ The following XML documentation tags are used directly in the *source code*, sin
 - `<param>`
 - `<returns>`
 
-## Source code documentation structure <!-- omit in toc -->
+## Source code documentation structure<!-- omit in toc -->
 
 Source code XML documentation should follow these guidelines:
 
 - Comments (including tags) should fit on a single line
 - Comments (not including tags) should not exceed 120 characters
 
-## Example of source code XML documentation <!-- omit in toc -->
+## Example of source code XML documentation<!-- omit in toc -->
 
 ```csharp
 /// <summary>Does a thing.</summary>
@@ -97,13 +97,13 @@ The following XML documentation tags are stored in external files, in order to k
 
 If a `<remarks>` entry is longer than a single line, it should contained in an external file, not the source code.
 
-## External files <!-- omit in toc -->
+## External files<!-- omit in toc -->
 
 Each *namespace* has it's own external XML documentation file containing the external XML documentation for all *classes* in the namespace. The file is located in the project's `./XmlDoc/` folder with the syntax of `%namespace%_doc.xml`
 
 For example, XML documentation for `Namespace.Thing` namespace is located in the `./XmlDoc/Namespace.Thing_doc.xml` file, and contains all of the external XML documentation for all of the classes in the `Namespace.Thing` namespace.
 
-## Example of source code XML documentation <!-- omit in toc -->
+## Example of source code XML documentation<!-- omit in toc -->
 
 ```xml
 <!--
@@ -146,7 +146,7 @@ For example, XML documentation for `Namespace.Thing` namespace is located in the
 </%Namespace%>
 ```
 
-## Referencing external XML documentation in the source code <!-- omit in toc -->
+## Referencing external XML documentation in the source code<!-- omit in toc -->
 
 To reference external XML documentation in the source code, add the following line at the end of the source code XML documentation:
 
@@ -221,9 +221,9 @@ An example of...uh...an example XML comment:
 /// </example>
 ```
 
-## &lt;list&gt; tag <!-- omit in toc -->
+## &lt;list&gt; tag<!-- omit in toc -->
 
-### Bullet list <!-- omit in toc -->
+### Bullet list<!-- omit in toc -->
 
 Bulleted lists should follow these guidelines:
 
@@ -243,11 +243,11 @@ Bulleted lists should follow these guidelines:
 </para>
 ```
 
-### Numbered list <!-- omit in toc -->
+### Numbered list<!-- omit in toc -->
 
 TBA
 
-### Tables <!-- omit in toc -->
+### Tables<!-- omit in toc -->
 
 Tables should follow these guidelines:
 
