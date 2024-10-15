@@ -19,11 +19,11 @@ XML documentation guidelines
 
 # XML documentation guidelines
 
-Projects should use both *source code* and *external* XML documentation.
+Projects should use both ***source code*** and ***external*** XML documentation.
 
-**Source code XML documentation** should provide all *required* information about a component.
+***Source code XML documentation*** should provide all *required* information about a component.
 
-**External XML documentation** should provide *non-essential but helpful* detailed information, examples, and other resources for a component.
+***External XML documentation*** should provide *non-essential but helpful* detailed information, examples, and other resources for a component.
 
 ## What should be documented<!-- omit in toc -->
 
@@ -50,19 +50,15 @@ Also, please see [Microsoft's recommended XML tags for C#](https://learn.microso
 
 ## Documentation timestamps
 
-Each file should contain an HTML comment at the top of the file indicating the last changed date, and file description:
+Each file should contain an HTML comment at the top of the file indicating the last changed date:
 
 ```html
-<!--
-    u240805.0855_documentation
-	
-	Description of XML documentation file
--->
+<!-- u240805 -->
 ```
 
 # Source code XML documentation
 
-The following XML documentation tags are used directly in the *source code*, since they are helpful when viewing the source code.
+The following XML documentation tags are used directly in the ***source code***, since they are helpful when viewing the source code.
 
 - `<summary>`
 - `<param>`
