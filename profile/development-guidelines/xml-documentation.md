@@ -102,9 +102,7 @@ For example, XML documentation for `Namespace.Thing` namespace is located in the
 ## Example of source code XML documentation<!-- omit in toc -->
 
 ```xml
-<!--
-    u240805.0855_documentation
--->
+<!-- u240805-->
 
 <%Namespace%>
 
