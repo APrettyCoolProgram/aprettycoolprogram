@@ -63,6 +63,7 @@ The following XML documentation tags should **always** be in the ***source code*
 - `<summary>`
 - `<param>`
 - `<returns>`
+- `<value>`
 
 The following XML documentation tags **can be** in the source code, as long as they follow the [source code documentation structure](#source-code-documentation-structure):
 
@@ -93,7 +94,6 @@ The following XML documentation tags are stored in external files, in order to k
 - `<exception>`
 - `<see>`
 - `<seealso>`
-- `<value>`
 
 If a `<remarks>` entry is longer than a single line, it should contained in an external file, not the source code.
 
