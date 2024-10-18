@@ -58,11 +58,15 @@ Each file should contain an HTML comment at the top of the file indicating the l
 
 # Source code XML documentation
 
-The following XML documentation tags are used directly in the ***source code***, since they are helpful when viewing the source code.
+The following XML documentation tags should **always** be in the ***source code***, since they are helpful when viewing the source code.
 
 - `<summary>`
 - `<param>`
 - `<returns>`
+
+The following XML documentation tags **can be** in the source code, as long as they follow the [source code documentation structure](#source-code-documentation-structure):
+
+- `<remarks>`
 
 ## Source code documentation structure<!-- omit in toc -->
 
