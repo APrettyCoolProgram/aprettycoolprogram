@@ -29,9 +29,41 @@ Projects should use both ***source code*** and ***external*** XML documentation.
 
 The following source code components should be commented:
 
-- Classes
-- Properties
-- Methods
+### Classes
+
+Classes should look like this:
+
+```csharp
+/// <summary>What the class does.</summary>
+/// <include file='XmlDoc/%Namespace%_doc.xml' path='%Namespace%/Cs[@name="%ClassName%"]/%ClassName%/*'/>
+```
+
+External Class XML documentation should look like this:
+
+```csharp
+<%Namespace%>
+	<Cs name="%ClassName%">
+		<%ClassName%>
+		 <remarks>
+			 <para>
+				 Additional detailed remarks about the class.
+			 </para>
+		 </remarks>
+		 <seealso href="%DocumentationURL">Project documentation</seealso>
+		</%ClassName%>
+	
+	</Cs>
+</%Namespace%>
+```
+
+### Class properties
+
+TBD
+
+### Methods
+
+TBD
+
 
 ## XML documentation standards
 
@@ -53,7 +85,7 @@ Also, please see [Microsoft's recommended XML tags for C#](https://learn.microso
 Each file should contain an HTML comment at the top of the file indicating the last changed date:
 
 ```html
-<!-- u240805 -->
+<!-- u241023 -->
 ```
 
 # Source code XML documentation
@@ -119,12 +151,8 @@ For example, XML documentation for `Namespace.Thing` namespace is located in the
                 <para>
                     This is a list
                     <list type="bullet">
-                        <item>
-                            Bullet 1
-                        </item>
-                        <item>
-                            Bullet 2
-                        </item>
+                        <item>Bullet 1</item>
+                        <item>Bullet 2</item>
                     </list>
                     <br/>
                     More comments.
@@ -334,6 +362,20 @@ Remarks can contain tables, but they kind of look wonky in Visual Studio (but lo
 ```
 
 ## &lt;see&gt; tag
+
+For simple references:
+
+```csharp
+This is a reference to <see cref="AThing"/>.
+```
+
+For more complex references:
+
+```csharp
+This is a reference to <see cref="ANamespace.AClass.AProperty">AProperty</see>.
+```
+
+For a URL/webpage:
 
 ```csharp
 Please see the <see href="github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#avatar-optionobject">Tingen documentation</see> for more information.
