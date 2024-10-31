@@ -1,20 +1,24 @@
 XML documentation guidelines
 
 - [XML documentation guidelines](#xml-documentation-guidelines)
-	- [XML documentation standards](#xml-documentation-standards)
-	- [Documentation timestamps](#documentation-timestamps)
+    - [Classes](#classes)
+    - [Methods](#methods)
+    - [Class properties](#class-properties)
+    - [Methods](#methods-1)
+  - [XML documentation standards](#xml-documentation-standards)
+  - [Documentation timestamps](#documentation-timestamps)
 - [Source code XML documentation](#source-code-xml-documentation)
 - [External XML documentation](#external-xml-documentation)
 - [XML documentation formatting](#xml-documentation-formatting)
-	- [Text Formatting](#text-formatting)
-	- [Special Characters](#special-characters)
+  - [Text Formatting](#text-formatting)
+  - [Special Characters](#special-characters)
 - [XML documentation examples](#xml-documentation-examples)
-	- [\<code\> and \<c\> tags](#code-and-c-tags)
-	- [\<example\> tag](#example-tag)
-	- [\<remarks\> tag](#remarks-tag)
-	- [\<see\> tag](#see-tag)
-	- [\<seealso\> tag](#seealso-tag)
-	- [\<value\> tag](#value-tag)
+  - [\<code\> and \<c\> tags](#code-and-c-tags)
+  - [\<example\> tag](#example-tag)
+  - [\<remarks\> tag](#remarks-tag)
+  - [\<see\> tag](#see-tag)
+  - [\<seealso\> tag](#seealso-tag)
+  - [\<value\> tag](#value-tag)
 - [Complete XML documentation example](#complete-xml-documentation-example)
 
 # XML documentation guidelines
@@ -31,30 +35,107 @@ The following source code components should be commented:
 
 ### Classes
 
-Classes should look like this:
+Source code classes should look like this:
 
 ```csharp
 /// <summary>What the class does.</summary>
-/// <include file='XmlDoc/%Namespace%_doc.xml' path='%Namespace%/Cs[@name="%ClassName%"]/%ClassName%/*'/>
+/// <include file='XmlDoc/%Namespace%.%ClassName%_doc.xml' path='%Namespace%/Type[@name=Class]/%ClassName%/*'/>
+
+### Properties
+
+Source code properties should look like this:
+
+```csharp
+/// <summary>What the property is.</summary>
+/// <include file='XmlDoc/%Namespace%.%ClassName%_doc.xml' path='%Namespace%/Property[@name="Property"]/%PropertyName%/*'/>
+```
+
+### Methods
+
+Source code methods should look like this:
+
+```csharp
+/// <summary>What the property is.</summary>
+/// <include file='XmlDoc/%Namespace%.%ClassName%_doc.xml' path='%Namespace%/Method[@name="Method"]/%MethodName%/*'/>
 ```
 
 External Class XML documentation should look like this:
 
 ```csharp
+<!-- u241023 -->
+
+<!-- This is the external XML Documentation file for %Namespace%.%ClassName%.cs -->
+
 <%Namespace%>
-	<Cs name="%ClassName%">
-		<%ClassName%>
-		 <remarks>
-			 <para>
-				 Additional detailed remarks about the class.
-			 </para>
-		 </remarks>
-		 <seealso href="%DocumentationURL">Project documentation</seealso>
-		</%ClassName%>
+
+    <!-- Classes -->
+    <Type name="Class">
+
+        <!-- ClassName% -->
+            <%ClassName%>
+                <remarks>
+                    <para>
+                        Additional detailed remarks about the class.
+                    </para>
+                </remarks>
+                <seealso href="%DocumentationURL">Project documentation</seealso>
+            </%ClassName%>
+
+    </Type>
 	
-	</Cs>
+    <!-- Properties -->
+    <Type name="Property">
+
+        <!-- PropertyName% -->
+            <%PropertyName%>
+                <remarks>
+                    <para>
+                        Additional detailed remarks about the property.
+                    </para>
+                </remarks>
+            </%CPropertyName%>
+
+    </Type>
+	
+    <!-- Methods -->
+    <Type name="Method">
+
+        <!-- %MethodName%() -->
+        <%MethodName%>
+            <remarks>
+                <para>
+                    Additional detailed remarks about the method.
+                </para>
+            </remarks>
+        </%MethodName%>
+
+	</Type>
+
 </%Namespace%>
 ```
+
+Please note there are blank lines in the following locations:
+* After `<%Namespace%>` and before `</%Namespace%>`
+* After `<%ClassName%>` and before `</%ClassName%>`
+* After `<%PropertyName%>` and before `</%PropertyName%>`
+* After `<%MethodName%>` and before `</%MethodName%>`
+* After `<Type name="">` and before `</Type name="">`
+
+Class documentation:
+* The class documentation block starts with a `<!-- Classes -->` comment
+* Should generally contain a single class
+* Individual class blocks are separated by blank lines
+* Individual class blocks start with a `<!-- %ClassName.cs% -->` comment
+
+Property documentation:
+* The class documentation block starts with a `<!-- Properties -->` comment
+* Individual property blocks are separated by blank lines
+* Individual property blocks start with a `<!-- %PropertyName% -->` comment
+
+Method documentation:
+* The method documentation block starts with a `<!-- Methods -->` comment
+* Individual method blocks are separated by blank lines
+* Individual method blocks start with a `<!-- %MethodName()% -->` comment
 
 ### Class properties
 
@@ -85,7 +166,10 @@ Also, please see [Microsoft's recommended XML tags for C#](https://learn.microso
 Each file should contain an HTML comment at the top of the file indicating the last changed date:
 
 ```html
-<!-- u241023 -->
+<!-- 
+    u241031
+    Optional description of file.
+-->
 ```
 
 # Source code XML documentation
