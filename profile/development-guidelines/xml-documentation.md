@@ -1,10 +1,10 @@
 XML documentation guidelines
 
 - [XML documentation guidelines](#xml-documentation-guidelines)
-    - [Classes](#classes)
-    - [Methods](#methods)
-    - [Class properties](#class-properties)
-    - [Methods](#methods-1)
+  - [Classes](#classes)
+    - [Class methods](#class-methods)
+  - [Example of external Class XML Documentation](#example-of-external-class-xml-documentation)
+  - [Common stuff](#common-stuff)
   - [XML documentation standards](#xml-documentation-standards)
   - [Documentation timestamps](#documentation-timestamps)
 - [Source code XML documentation](#source-code-xml-documentation)
@@ -33,7 +33,7 @@ Projects should use both ***source code*** and ***external*** XML documentation.
 
 The following source code components should be commented:
 
-### Classes
+## Classes
 
 Source code classes should look like this:
 
@@ -41,7 +41,7 @@ Source code classes should look like this:
 /// <summary>What the class does.</summary>
 /// <include file='XmlDoc/%Namespace%.%ClassName%_doc.xml' path='%Namespace%/Type[@name=Class]/%ClassName%/*'/>
 
-### Properties
+### Class properties
 
 Source code properties should look like this:
 
@@ -50,7 +50,7 @@ Source code properties should look like this:
 /// <include file='XmlDoc/%Namespace%.%ClassName%_doc.xml' path='%Namespace%/Property[@name="Property"]/%PropertyName%/*'/>
 ```
 
-### Methods
+### Class methods
 
 Source code methods should look like this:
 
@@ -59,12 +59,14 @@ Source code methods should look like this:
 /// <include file='XmlDoc/%Namespace%.%ClassName%_doc.xml' path='%Namespace%/Method[@name="Method"]/%MethodName%/*'/>
 ```
 
+## Example of external Class XML Documentation
+
 External Class XML documentation should look like this:
 
-```csharp
+```xml
 <!-- u241023 -->
 
-<!-- This is the external XML Documentation file for %Namespace%.%ClassName%.cs -->
+<!-- This is the external XML Documentation file for %Namespace%cs -->
 
 <%Namespace%>
 
@@ -123,7 +125,7 @@ Please note there are blank lines in the following locations:
 
 Class documentation:
 * The class documentation block starts with a `<!-- Classes -->` comment
-* Should generally contain a single class
+* In general, there should only be a single class description
 * Individual class blocks are separated by blank lines
 * Individual class blocks start with a `<!-- %ClassName.cs% -->` comment
 
@@ -137,13 +139,38 @@ Method documentation:
 * Individual method blocks are separated by blank lines
 * Individual method blocks start with a `<!-- %MethodName()% -->` comment
 
-### Class properties
+Also:
+* Class descriptions should contain any external sources, such as documentation, etc.
 
-TBD
 
-### Methods
+## Common stuff
 
-TBD
+Common stuff should be documented in an external file named XmlDoc/%Namespace%-Common_doc.xml`
+
+Common stuff should look like this:
+
+```csharp
+/// <summary>What the class does.</summary>
+/// <include file='XmlDoc/%Namespace%-Common_doc.xml' path='%Namespace%-Common/Type[@name=%TypeName%]/%EntryName%/*'/>
+```
+
+The documentation should look like this:
+
+```xml
+ <!-- Logging -->
+ <Type name="%TypeName%">
+
+    <!--  %EntryName% [ <include file='XmlDoc/%Namespace%-Common_doc.xml' path='%Namespace%-Common/Type[@name="%TypeName%"]/%EntryName%/*'/> ] -->
+    <%EntryName%>
+        <remarks>
+            <para>
+                Description of the entry.
+            </para>
+        </remarks>
+    </%EntryName%>
+
+ </Type>
+```
 
 
 ## XML documentation standards
@@ -168,7 +195,7 @@ Each file should contain an HTML comment at the top of the file indicating the l
 ```html
 <!-- 
     u241031
-    Optional description of file.
+    This is the external XML Documentation file for the %Namespace%.%ClassName% class.
 -->
 ```
 
