@@ -98,6 +98,13 @@ External Class XML documentation should look like this:
             </%CPropertyName%>
 
     </Type>
+
+    OR
+
+    <!-- Properties -->
+    <Type name="Method>">
+        <!-- Properties for this class are defined in the common file. -->
+    </Type>
 	
     <!-- Methods -->
     <Type name="Method">
@@ -110,6 +117,13 @@ External Class XML documentation should look like this:
                 </para>
             </remarks>
         </%MethodName%>
+
+        OR
+
+    <!-- Methods -->
+    <Type name="Method>">
+        <!-- Methods for this class are documented in the source code. -->
+    </Type>
 
 	</Type>
 
