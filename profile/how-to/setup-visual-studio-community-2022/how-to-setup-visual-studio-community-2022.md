@@ -16,8 +16,7 @@ The following workflows will be installed:
 * .NET Multi-platform APP UI development
 * .NET desktop development
 
-[Screenshot 1](./_attachments/installation-workloads-01.png)
-
+> [Screenshot 1](./_attachments/installation-workloads-01.png) | [Screenshot 2](./_attachments/installation-workloads-02.png)
 
 
 
