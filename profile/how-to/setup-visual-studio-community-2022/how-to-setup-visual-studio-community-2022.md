@@ -28,9 +28,9 @@
 </div>
 
 CONTENTS  
-[Installing Visual Studio 2022]()
-[Installing Visual Studio 2022 extensions]() 
-[Setting up Visual Studio 2022]()
+[Installing Visual Studio 2022]()  
+[Installing Visual Studio 2022 extensions]()  
+[Setting up Visual Studio 2022]()  
 
 # Installing Visual Studio 2022
 
