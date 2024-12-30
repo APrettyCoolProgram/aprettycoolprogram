@@ -15,47 +15,56 @@
 
 -->
 
-> **Last updated** December 30, 2024  
-> **Visual Studio version** 17.12.3
+> **This document was last updated** December 30, 2024  
 
-# How to setup Visual Studio 2022
+<div align="center">
 
-This document will walk through the steps I use to setup the Visual Studio 2022.
+   <!--
+    This image was created by Midjourney using the following prompt:
+    "closeup of a highway sign with the words HOW TO SETUP VISUAL STUDIO 2022"
+   -->
+  ![logo](howto-logo.png)
 
-## Initial installation
+</div>
 
-### Workflows
+CONTENTS  
+[Installing Visual Studio 2022]()
+[Installing Visual Studio 2022 extensions]() 
+[Setting up Visual Studio 2022]()
 
-The following workflows will be installed:
+# Installing Visual Studio 2022
+
+Download the installer for [Visual Studio Community 2022](https://visualstudio.microsoft.com/vs/).
+
+## Choosing the workflows to install
+
+Choose the workflows you will need for development.
+
+For example, I've installed the following workflows for developing web services using C#:
 
 * ASP.NET and web development
 * Azure Development
 * .NET Multi-platform APP UI development
 * .NET desktop development
 
-The installation workload screen should look like this: [1](./_attachments/installation-workloads-01.png) | [2](./_attachments/installation-workloads-02.png)
+The workflows you specify will take care of the other components of the installation process.
 
-### Individual components
+# Installing Visual Studio 2022 extensions
 
-The installed workflows will take care of which individual components are installed.
+These are the extensions I install. You may want/need to install other extensions.
 
-If you are interested in the specific details of what is installed: [1](./_attachments/installation-individual-components-01.png) | [2](./_attachments/installation-individual-components-02.png) | [3](./_attachments/installation-individual-components-03.png) | [4](./_attachments/installation-individual-components-04.png) | [5](./_attachments/installation-individual-components-05.png) | [6](./_attachments/installation-individual-components-06.png) | [7](./_attachments/installation-individual-components-07.png) | [8](./_attachments/installation-individual-components-08.png)
+To install an extension:
 
-### Language packs
+1. Go to `Extensions -> Manage Extensions...`
+2. Click the `Browse` tab
+3. Search for the extension name
+4. Click "Install"
 
-Install whichever language(s) you need.
+For example (using a random extension):
 
-### Installation locations
+![example](./screenshots/extension-install-example-01.png)
 
-Currently I use the default settings, but future installs will move the Download cache to a different drive.
-
-### Installation details
-
-The Installation details should look like this: [1](./_attachments/final-installation-details-01.png) | [2](./_attachments/final-installation-details-02.png)
-
-## Visual Studio extensions
-
-### Standard stuff
+## Recommended extensions
 
 Microsoft has an extension pack that contains a bunch of individual extensions that are pretty great:
 
@@ -98,9 +107,16 @@ And a few other useful extensions:
 * [VSColorOutput64](https://marketplace.visualstudio.com/items?itemName=MikeWard-AnnArbor.VSColorOutput64)
 * [XAML Styler for Visual Studio 2022](https://marketplace.visualstudio.com/items?itemName=TeamXavalon.XAMLStyler2022)
 
-### Advanced stuff
+## Themes
 
-There are a few extensions I install that I generally leave disabled, and only use sporatically:
+Themes/color schemes/etc. are a personal choice. I use these:
+
+* [Dracula Official](https://marketplace.visualstudio.com/items?itemName=dracula-theme.dracula)
+* [Synthwave '84 Reborn](https://marketplace.visualstudio.com/items?itemName=Fasteroid.Synthwave84VS)
+
+## Optional extensions
+
+There are a few extensions I install that I generally leave disabled, and only use in specific cases:
 
 * [Pretty Doc Comments](https://marketplace.visualstudio.com/items?itemName=OlivierJacot-Descombes.PrettyDocComments)  
   If you use a lot of inline XML documentation, this can help visualize what it looks like when you use an external documentation formatter like [Sandcastle](https://ewsoftware.github.io/SHFB/html/bd1ddb51-1c4f-434f-bb1a-ce2135d3a909.htm). It does make things a bit more noisy when coding, so I leave it disabled unless I am working on documentation.
@@ -113,60 +129,48 @@ There are a few extensions I install that I generally leave disabled, and only u
 
 * [SonarQube for Visual Studio 2022](https://marketplace.visualstudio.com/items?itemName=SonarSource.SonarLintforVisualStudio2022)
 
-### Themes
+# Configuring Visual Studio 2022 - Options
 
-Themes/color schemes/etc. are a personal choice. I use these:
+The majority of Visual Studio's configuration will be done in the `Options` window, which you can get to by going to `Tools -> Options...`
 
-* [Dracula Official](https://marketplace.visualstudio.com/items?itemName=dracula-theme.dracula)
-* [Synthwave '84 Reborn](https://marketplace.visualstudio.com/items?itemName=Fasteroid.Synthwave84VS)
+Things to remember about this list:
 
-### What things should look like
+* It contains screenshots of settings that are either modified, or are kept for historical reasons.
+* Non-modified option pages are excluded (otherwise this list would be too long).
+* These modifications are what I use for C#/web service development. You may want/need to make additional modifications.
 
-After the extensions below are installed, things should look like this: [1](./_attachments/extensions-01.png) | [2](./_attachments/extensions-02.png) | [3](./_attachments/extensions-03.png)
-
-## Visual Studio settings
-
-This list contains screenshots of settings that are either modified, or are kept for historical reasons.
-
-Non-modified option pages are excluded (this list would be too long if they were included).
-
-I only modify the following language settings:
-
-* C#
-* XAML
-
-### Options
+## Options window
 
 * Environment
-  * [**General**](./_attachments/settings-environment-general-01.png)
-  * [**Accounts**](./_attachments/settings-environment-accounts-01.png)
-  * [**AutoRecover**](./_attachments/settings-environment-autorecover-01.png)
-  * [**Clean Solution**](./_attachments/settings-environment-clean-solution-01.png)
-  * [**Documents**](./_attachments/settings-environment-documents-01.png)
-  * [**Extensions**](./_attachments/settings-environment-extensions-01.png)
-  * [**Find and Replace**](./_attachments/settings-environment-find-and-replace-01.png)
+  * [**General**](./screenshots/settings-environment-general-01.png)
+  * [**Accounts**](./screenshots/settings-environment-accounts-01.png)
+  * [**AutoRecover**](./screenshots/settings-environment-autorecover-01.png)
+  * [**Clean Solution**](./screenshots/settings-environment-clean-solution-01.png)
+  * [**Documents**](./screenshots/settings-environment-documents-01.png)
+  * [**Extensions**](./screenshots/settings-environment-extensions-01.png)
+  * [**Find and Replace**](./screenshots/settings-environment-find-and-replace-01.png)
   * **Fonts and Colors** ([details]())
-  * [**Tabs and Windows**](./_attachments/settings-environment-tabs-and-windows-01.png)
-  * [**Trailing Whitespace**](./_attachments/settings-environment-trailing-whitespace-01.png)
-  * [**Task List**](./_attachments/settings-environment-task-list-01.png)
-  * [**Tweaks 2022**](./_attachments/settings-environment-tweaks-2022-01.png)
+  * [**Tabs and Windows**](./screenshots/settings-environment-tabs-and-windows-01.png)
+  * [**Trailing Whitespace**](./screenshots/settings-environment-trailing-whitespace-01.png)
+  * [**Task List**](./screenshots/settings-environment-task-list-01.png)
+  * [**Tweaks 2022**](./screenshots/settings-environment-tweaks-2022-01.png)
 * Projects and Solutions
-  * [**General**](./_attachments/settings-projects-and-solutions-general-01.png)
-  * [**Build and Run**](./_attachments/settings-projects-and-solutions-build-and-run-01.png)
+  * [**General**](./screenshots/settings-projects-and-solutions-general-01.png)
+  * [**Build and Run**](./screenshots/settings-projects-and-solutions-build-and-run-01.png)
 * Text Editor
-  * [**General**](./_attachments/settings-text-editor-general-01.png)
-  * [**Advanced**](./_attachments/settings-text-editor-advanced-01.png)
+  * [**General**](./screenshots/settings-text-editor-general-01.png)
+  * [**Advanced**](./screenshots/settings-text-editor-advanced-01.png)
   * **Code Cleanup** ([details]())
   * All Languages
-    * [**General**](./_attachments/settings-text-editor-all-languages-general-01.png)
-    * [**Scroll Bars**](./_attachments/settings-text-editor-all-languages-scroll-bars-01.png)
-    * [**Tabs**](./_attachments/settings-text-editor-all-languages-tabs-01.png)
+    * [**General**](./screenshots/settings-text-editor-all-languages-general-01.png)
+    * [**Scroll Bars**](./screenshots/settings-text-editor-all-languages-scroll-bars-01.png)
+    * [**Tabs**](./screenshots/settings-text-editor-all-languages-tabs-01.png)
   * C#
-    * **Advanced** [1](./_attachments/settings-text-editor-csharp-advanced-01.png) | [2](./_attachments/settings-text-editor-csharp-advanced-02.png)
+    * **Advanced** [1](./screenshots/settings-text-editor-csharp-advanced-01.png) | [2](./screenshots/settings-text-editor-csharp-advanced-02.png)
     * **Code Style** ([details]())
-    * [**Intellisense**](./_attachments/settings-text-editor-csharp-intellisense-01.png)
+    * [**Intellisense**](./screenshots/settings-text-editor-csharp-intellisense-01.png)
   * XAML
     * Formatting
-      * [**General**](./_attachments/settings-text-editor-xaml-formatting-general-01.png)
-      * [**Spacing**](./_attachments/settings-text-editor-xaml-formatting-spacing-01.png)
-    * [**Miscellaneous**](./_attachments/settings-text-editor-xaml-miscellaneous-01.png)
+      * [**General**](./screenshots/settings-text-editor-xaml-formatting-general-01.png)
+      * [**Spacing**](./screenshots/settings-text-editor-xaml-formatting-spacing-01.png)
+    * [**Miscellaneous**](./screenshots/settings-text-editor-xaml-miscellaneous-01.png)
