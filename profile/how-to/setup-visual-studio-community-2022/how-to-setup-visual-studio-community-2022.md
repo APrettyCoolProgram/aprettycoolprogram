@@ -139,7 +139,7 @@ Things to remember about this list:
 * Non-modified option pages are excluded (otherwise this list would be too long).
 * These modifications are what I use for C#/web service development. You may want/need to make additional modifications.
 
-## Options window
+## Visual Studio specific
 
 * Environment
   * [**General**](./screenshots/settings-environment-general-01.png)
@@ -169,8 +169,23 @@ Things to remember about this list:
     * **Advanced** [1](./screenshots/settings-text-editor-csharp-advanced-01.png) | [2](./screenshots/settings-text-editor-csharp-advanced-02.png)
     * **Code Style** ([details]())
     * [**Intellisense**](./screenshots/settings-text-editor-csharp-intellisense-01.png)
+  * JSON
+  * Markdown
+  * Plain Text
   * XAML
     * Formatting
       * [**General**](./screenshots/settings-text-editor-xaml-formatting-general-01.png)
       * [**Spacing**](./screenshots/settings-text-editor-xaml-formatting-spacing-01.png)
     * [**Miscellaneous**](./screenshots/settings-text-editor-xaml-miscellaneous-01.png)
+  * GitHub
+    * [CoPilot]()
+
+## Extension specific
+
+* [Better Comments]()
+* [Collapse Comments]()
+* [Editor Guidelines]()
+* [Productivity Power Tools]()
+* [Viasfora]()
+* [VSColorOutput64]()
+* [XAML Styler]()
