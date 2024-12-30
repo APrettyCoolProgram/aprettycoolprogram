@@ -1,11 +1,26 @@
 <!--
     Last updated: 241230
-    Visual Studio 2022 version: 17.12.3
+    TODO:
+        Settings for:
+            Better Comments
+            Collapse Comments
+            CoPilot
+            Language - JSON
+            Language - Markdown
+            Language - Plain text
+            Productivity Power Tools
+            Viasfora
+            VSColorOutput
+            XAML Styler
+
 -->
+
+> **Last updated** December 30, 2024  
+> **Visual Studio version** 17.12.3
 
 # How to setup Visual Studio 2022
 
-This document will walk through the steps I use to setup the Visual Studio 2022 (version 17.12.3)
+This document will walk through the steps I use to setup the Visual Studio 2022.
 
 ## Initial installation
 
@@ -38,10 +53,9 @@ Currently I use the default settings, but future installs will move the Download
 
 The Installation details should look like this: [1](./_attachments/final-installation-details-01.png) | [2](./_attachments/final-installation-details-02.png)
 
-## Extensions
+## Visual Studio extensions
 
-After the extensions below are installed, things should look like this: [1](./_attachments/extensions-01.png) | [2](./_attachments/extensions-02.png) | [3](./_attachments/extensions-03.png)
-### Standard extensions
+### Standard stuff
 
 Microsoft has an extension pack that contains a bunch of individual extensions that are pretty great:
 
@@ -84,13 +98,6 @@ And a few other useful extensions:
 * [VSColorOutput64](https://marketplace.visualstudio.com/items?itemName=MikeWard-AnnArbor.VSColorOutput64)
 * [XAML Styler for Visual Studio 2022](https://marketplace.visualstudio.com/items?itemName=TeamXavalon.XAMLStyler2022)
 
-### Themes
-
-Themes/color schemes/etc. are a personal choice. I use these:
-
-* [Dracula Official](https://marketplace.visualstudio.com/items?itemName=dracula-theme.dracula)
-* [Synthwave '84 Reborn](https://marketplace.visualstudio.com/items?itemName=Fasteroid.Synthwave84VS)
-
 ### Advanced stuff
 
 There are a few extensions I install that I generally leave disabled, and only use sporatically:
@@ -106,7 +113,18 @@ There are a few extensions I install that I generally leave disabled, and only u
 
 * [SonarQube for Visual Studio 2022](https://marketplace.visualstudio.com/items?itemName=SonarSource.SonarLintforVisualStudio2022)
 
-## Settings
+### Themes
+
+Themes/color schemes/etc. are a personal choice. I use these:
+
+* [Dracula Official](https://marketplace.visualstudio.com/items?itemName=dracula-theme.dracula)
+* [Synthwave '84 Reborn](https://marketplace.visualstudio.com/items?itemName=Fasteroid.Synthwave84VS)
+
+### What things should look like
+
+After the extensions below are installed, things should look like this: [1](./_attachments/extensions-01.png) | [2](./_attachments/extensions-02.png) | [3](./_attachments/extensions-03.png)
+
+## Visual Studio settings
 
 This list contains screenshots of settings that are either modified, or are kept for historical reasons.
 
@@ -129,7 +147,6 @@ I only modify the following language settings:
   * [**Find and Replace**](./_attachments/settings-environment-find-and-replace-01.png)
   * **Fonts and Colors** ([details]())
   * [**Tabs and Windows**](./_attachments/settings-environment-tabs-and-windows-01.png)
-  * Terminal
   * [**Trailing Whitespace**](./_attachments/settings-environment-trailing-whitespace-01.png)
   * [**Task List**](./_attachments/settings-environment-task-list-01.png)
   * [**Tweaks 2022**](./_attachments/settings-environment-tweaks-2022-01.png)
