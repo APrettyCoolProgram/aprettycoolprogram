@@ -108,14 +108,16 @@ There are a few extensions I install that I generally leave disabled, and only u
 
 ## Settings
 
-Click on the options below for a screenshot of what the settings should look like.
+This list contains screenshots of settings that are either modified, or are kept for historical reasons.
 
-Things to keep in mind about this list:
+Non-modified option pages are excluded (this list would be too long if they were included).
 
-* If an option is just text (no link), leave the settings at default.
-* The "Preview Features" settings aren't documented, as they change often.
-* The only language I modify is C#
-* Some settings are explained in detail outside of this list.
+I only modify the following language settings:
+
+* C#
+* XAML
+
+### Options
 
 * Environment
   * [**General**](./_attachments/settings-environment-general-01.png)
@@ -126,13 +128,6 @@ Things to keep in mind about this list:
   * [**Extensions**](./_attachments/settings-environment-extensions-01.png)
   * [**Find and Replace**](./_attachments/settings-environment-find-and-replace-01.png)
   * **Fonts and Colors** ([details]())
-    * **Solution colors** ([details]())
-  * Import and Export Settings
-  * International Settings
-  * Keyboard
-  * Preview Features
-  * Product Updates
-  * Security
   * [**Tabs and Windows**](./_attachments/settings-environment-tabs-and-windows-01.png)
   * Terminal
   * [**Trailing Whitespace**](./_attachments/settings-environment-trailing-whitespace-01.png)
@@ -140,30 +135,21 @@ Things to keep in mind about this list:
   * [**Tweaks 2022**](./_attachments/settings-environment-tweaks-2022-01.png)
 * Projects and Solutions
   * [**General**](./_attachments/settings-projects-and-solutions-general-01.png)
-  * ASP.NET Core
-  * Azure Functions
   * [**Build and Run**](./_attachments/settings-projects-and-solutions-build-and-run-01.png)
-  * Locations
-  * SDK-Style Projects
-  * Service Dependencies
-  * VB Defaults
-  * Web Package Management
-  * Web Projects
-* Source Control (leave at defaults)
-* Work Items (leave at defaults)
 * Text Editor
   * [**General**](./_attachments/settings-text-editor-general-01.png)
   * [**Advanced**](./_attachments/settings-text-editor-advanced-01.png)
   * **Code Cleanup** ([details]())
-  * File Extension
   * All Languages
     * [**General**](./_attachments/settings-text-editor-all-languages-general-01.png)
     * [**Scroll Bars**](./_attachments/settings-text-editor-all-languages-scroll-bars-01.png)
     * [**Tabs**](./_attachments/settings-text-editor-all-languages-tabs-01.png)
-    * Inlay Hints
-    * CodeLens
   * C#
-    * General (use "All Languages" settings)
-    * Scroll Bars (use "All Languages" settings)
-    * Tabs (use "All Languages" settings)
     * **Advanced** [1](./_attachments/settings-text-editor-csharp-advanced-01.png) | [2](./_attachments/settings-text-editor-csharp-advanced-02.png)
+    * **Code Style** ([details]())
+    * [**Intellisense**](./_attachments/settings-text-editor-csharp-intellisense-01.png)
+  * XAML
+    * Formatting
+      * [**General**](./_attachments/settings-text-editor-xaml-formatting-general-01.png)
+      * [**Spacing**](./_attachments/settings-text-editor-xaml-formatting-spacing-01.png)
+    * [**Miscellaneous**](./_attachments/settings-text-editor-xaml-miscellaneous-01.png)
