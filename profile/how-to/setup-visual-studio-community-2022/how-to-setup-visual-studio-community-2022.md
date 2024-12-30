@@ -40,8 +40,7 @@ The Installation details should look like this: [1](./_attachments/final-install
 
 ## Extensions
 
-After the extensions below are installed, things should look like this: [1](./_attachments/extensions-01.png) | [2](./_attachments/extensions-02.png) | [3](./_attachments/extensions-03.png) | [4](./_attachments/extensions-04.png)
-
+After the extensions below are installed, things should look like this: [1](./_attachments/extensions-01.png) | [2](./_attachments/extensions-02.png) | [3](./_attachments/extensions-03.png)
 ### Standard extensions
 
 Microsoft has an extension pack that contains a bunch of individual extensions that are pretty great:
@@ -107,3 +106,7 @@ There are a few extensions I install that I generally leave disabled, and only u
 
 * [SonarQube for Visual Studio 2022](https://marketplace.visualstudio.com/items?itemName=SonarSource.SonarLintforVisualStudio2022)
 
+## Settings
+
+* Environment
+  * [General](./_attachments/settings-environment-general-01.png)
