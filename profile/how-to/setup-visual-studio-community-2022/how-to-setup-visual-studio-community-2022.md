@@ -108,17 +108,62 @@ There are a few extensions I install that I generally leave disabled, and only u
 
 ## Settings
 
+Click on the options below for a screenshot of what the settings should look like.
+
+Things to keep in mind about this list:
+
+* If an option is just text (no link), leave the settings at default.
+* The "Preview Features" settings aren't documented, as they change often.
+* The only language I modify is C#
+* Some settings are explained in detail outside of this list.
+
 * Environment
-  * [General](./_attachments/settings-environment-general-01.png)
-  * [Accounts](./_attachments/settings-environment-accounts-01.png)
-  * [AutoRecover](./_attachments/settings-environment-autorecover-01.png)
-  * [Clean Solution](./_attachments/settings-environment-clean-solution-01.png)
-  * [Documents](./_attachments/settings-environment-documents-01.png)
-  * [Extensions](./_attachments/settings-environment-extensions-01.png)
-  * [Find and Replace](./_attachments/settings-environment-find-and-replace-01.png)
-  * Fonts and Colors (see below)
-    * Solution colors (see below)
-  * [Import and Export Settings](./_attachments/settings-environment-import-and-export-settings-01.png)
-
-
-
+  * [**General**](./_attachments/settings-environment-general-01.png)
+  * [**Accounts**](./_attachments/settings-environment-accounts-01.png)
+  * [**AutoRecover**](./_attachments/settings-environment-autorecover-01.png)
+  * [**Clean Solution**](./_attachments/settings-environment-clean-solution-01.png)
+  * [**Documents**](./_attachments/settings-environment-documents-01.png)
+  * [**Extensions**](./_attachments/settings-environment-extensions-01.png)
+  * [**Find and Replace**](./_attachments/settings-environment-find-and-replace-01.png)
+  * **Fonts and Colors** ([details]())
+    * **Solution colors** ([details]())
+  * Import and Export Settings
+  * International Settings
+  * Keyboard
+  * Preview Features
+  * Product Updates
+  * Security
+  * [**Tabs and Windows**](./_attachments/settings-environment-tabs-and-windows-01.png)
+  * Terminal
+  * [**Trailing Whitespace**](./_attachments/settings-environment-trailing-whitespace-01.png)
+  * [**Task List**](./_attachments/settings-environment-task-list-01.png)
+  * [**Tweaks 2022**](./_attachments/settings-environment-tweaks-2022-01.png)
+* Projects and Solutions
+  * [**General**](./_attachments/settings-projects-and-solutions-general-01.png)
+  * ASP.NET Core
+  * Azure Functions
+  * [**Build and Run**](./_attachments/settings-projects-and-solutions-build-and-run-01.png)
+  * Locations
+  * SDK-Style Projects
+  * Service Dependencies
+  * VB Defaults
+  * Web Package Management
+  * Web Projects
+* Source Control (leave at defaults)
+* Work Items (leave at defaults)
+* Text Editor
+  * [**General**](./_attachments/settings-text-editor-general-01.png)
+  * [**Advanced**](./_attachments/settings-text-editor-advanced-01.png)
+  * **Code Cleanup** ([details]())
+  * File Extension
+  * All Languages
+    * [**General**](./_attachments/settings-text-editor-all-languages-general-01.png)
+    * [**Scroll Bars**](./_attachments/settings-text-editor-all-languages-scroll-bars-01.png)
+    * [**Tabs**](./_attachments/settings-text-editor-all-languages-tabs-01.png)
+    * Inlay Hints
+    * CodeLens
+  * C#
+    * General (use "All Languages" settings)
+    * Scroll Bars (use "All Languages" settings)
+    * Tabs (use "All Languages" settings)
+    * **Advanced** [1](./_attachments/settings-text-editor-csharp-advanced-01.png) | [2](./_attachments/settings-text-editor-csharp-advanced-02.png)
