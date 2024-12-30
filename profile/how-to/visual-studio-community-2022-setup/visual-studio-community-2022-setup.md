@@ -1,6 +1,6 @@
 # Visual Studio 2022 Setup
 
-This will detail the setup of Visual Studio Community 2022 v17.11.35 with the following components:
+This will detail the setup of Visual Studio Community 2022 v17.12.3 with the following components:
 
 * ASP.NET and web development
 * Azure Development
