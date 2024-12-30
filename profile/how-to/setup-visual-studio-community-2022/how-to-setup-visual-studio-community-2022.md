@@ -110,3 +110,15 @@ There are a few extensions I install that I generally leave disabled, and only u
 
 * Environment
   * [General](./_attachments/settings-environment-general-01.png)
+  * [Accounts](./_attachments/settings-environment-accounts-01.png)
+  * [AutoRecover](./_attachments/settings-environment-autorecover-01.png)
+  * [Clean Solution](./_attachments/settings-environment-clean-solution-01.png)
+  * [Documents](./_attachments/settings-environment-documents-01.png)
+  * [Extensions](./_attachments/settings-environment-extensions-01.png)
+  * [Find and Replace](./_attachments/settings-environment-find-and-replace-01.png)
+  * Fonts and Colors (see below)
+    * Solution colors (see below)
+  * [Import and Export Settings](./_attachments/settings-environment-import-and-export-settings-01.png)
+
+
+
