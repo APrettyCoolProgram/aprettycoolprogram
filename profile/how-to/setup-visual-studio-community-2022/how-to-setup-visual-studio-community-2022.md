@@ -141,18 +141,13 @@ Things to remember about this list:
 
 * Environment
   * [**General**](./screenshots/settings-environment-general-01.png)
-  * [**Accounts**](./screenshots/settings-environment-accounts-01.png)
-  * [**AutoRecover**](./screenshots/settings-environment-autorecover-01.png)
-  * [**Clean Solution**](./screenshots/settings-environment-clean-solution-01.png)
+  * [**Clean Solution**] ([details]())
   * [**Documents**](./screenshots/settings-environment-documents-01.png)
-  * [**Extensions**](./screenshots/settings-environment-extensions-01.png)
-  * [**Find and Replace**](./screenshots/settings-environment-find-and-replace-01.png)
   * **Fonts and Colors** ([details]())
   * [**Tabs and Windows**](./screenshots/settings-environment-tabs-and-windows-01.png)
   * [**Trailing Whitespace**](./screenshots/settings-environment-trailing-whitespace-01.png)
   * [**Task List**](./screenshots/settings-environment-task-list-01.png)
-  * [**Tweaks 2022**](./screenshots/settings-environment-tweaks-2022-01.png)
-* Projects and Solutions
+  * [**Tweaks 2022**] ([details]())
   * [**General**](./screenshots/settings-projects-and-solutions-general-01.png)
   * [**Build and Run**](./screenshots/settings-projects-and-solutions-build-and-run-01.png)
 * Text Editor
@@ -181,9 +176,11 @@ Things to remember about this list:
 ## Extension specific
 
 * [Better Comments]()
+* [Clean Solution]()
 * [Collapse Comments]()
 * [Editor Guidelines]()
 * [Productivity Power Tools]()
+* [*Tweaks 2022**]()
 * [Viasfora]()
 * [VSColorOutput64]()
 * [XAML Styler]()
