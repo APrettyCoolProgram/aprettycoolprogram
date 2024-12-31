@@ -5,9 +5,6 @@
             Better Comments
             Collapse Comments
             CoPilot
-            Language - JSON
-            Language - Markdown
-            Language - Plain text
             Productivity Power Tools
             Viasfora
             VSColorOutput
@@ -159,7 +156,6 @@ Things to remember about this list:
     * [**Scroll Bars**](./screenshots/settings-text-editor-all-languages-scroll-bars-01.png)
     * [**Tabs**](./screenshots/settings-text-editor-all-languages-tabs-01.png)
   * C#
-    * [**General**](./screenshots/settings-text-editor-csharp-general-01.png)
     * **Advanced** [1](./screenshots/settings-text-editor-csharp-advanced-01.png) | [2](./screenshots/settings-text-editor-csharp-advanced-02.png)
     * **Code Style** ([details]())
     * [**Intellisense**](./screenshots/settings-text-editor-csharp-intellisense-01.png)
@@ -174,14 +170,56 @@ Things to remember about this list:
   * GitHub
     * [CoPilot]()
 
+## Details
+
+### Fonts and Colors
+
+No modifications...yet.
+
+### Code Style
+
+#### C#
+
+Most of the settings in Code Style can have one of the following Severities:
+
+* `Error`  
+  Violations appear as build errors and cause builds to fail.
+
+* `Refactoring Only`  
+  Violations aren't visible to the user.
+
+* `Suggestion`  
+  Violations appear as build messages and as suggestions in the Visual Studio IDE.
+
+* `Warning`  
+  Violations appear as build warnings but do not cause builds to fail.
+
+* General
+
+
+### GitHub CoPilot
+
 ## Extension specific
 
-* [Better Comments]()
-* [Clean Solution]()
-* [Collapse Comments]()
-* [Editor Guidelines]()
-* [Productivity Power Tools]()
-* [*Tweaks 2022**]()
-* [Viasfora]()
-* [VSColorOutput64]()
-* [XAML Styler]()
+### Better Comments
+
+### Clean Solution
+
+### Collapse Comments
+
+### Editor Guidelines
+
+1. Go to `Tools > Options > Environment > Fonts and Colors`
+2. Choose `Guideline` from the *Display Items* list
+3. Pick a color you like!
+
+### Productivity Power Tools
+
+### Tweaks 2022
+
+### Viasfora
+
+### VSColorOutput64
+
+### XAML Styler
+  
