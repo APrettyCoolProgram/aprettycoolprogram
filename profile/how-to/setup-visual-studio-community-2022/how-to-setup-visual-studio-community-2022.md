@@ -159,6 +159,7 @@ Things to remember about this list:
     * [**Scroll Bars**](./screenshots/settings-text-editor-all-languages-scroll-bars-01.png)
     * [**Tabs**](./screenshots/settings-text-editor-all-languages-tabs-01.png)
   * C#
+    * [**General**](./screenshots/settings-text-editor-csharp-general-01.png)
     * **Advanced** [1](./screenshots/settings-text-editor-csharp-advanced-01.png) | [2](./screenshots/settings-text-editor-csharp-advanced-02.png)
     * **Code Style** ([details]())
     * [**Intellisense**](./screenshots/settings-text-editor-csharp-intellisense-01.png)
