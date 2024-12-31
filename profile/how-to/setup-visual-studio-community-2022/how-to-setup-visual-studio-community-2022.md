@@ -187,16 +187,15 @@ Most of the settings in Code Style can have one of the following Severities:
 | `Suggestion` | Violations appear as build messages and as suggestions in the Visual Studio IDE. |
 | `Warning` |  Violations appear as build warnings but do not cause builds to fail. |
 
-### General
+* **General** [1](./screenshots/settings-text-editor-csharp-code-style-general-01.png) | [2](./screenshots/settings-text-editor-csharp-code-style-general-02.png)
 
-    * [**1**](./screenshots/settings-text-editor-csharp-code-style-general-01.png) | * [**2**](./screenshots/settings-text-editor-csharp-code-style-general-02.png)
-
-settings-text-editor-csharp-code-style-formatting-indentation-01
-settings-text-editor-csharp-code-style-formatting-new-lines-01
-settings-text-editor-csharp-code-style-formatting-spacing-01
-settings-text-editor-csharp-code-style-formatting-wrapping-01
-settings-text-editor-csharp-code-style-naming-01
-settings-text-editor-csharp-code-style-intellisense-01
+* Formatting
+  * [**Indentation**](settings-text-editor-csharp-code-style-formatting-indentation-01.png)
+  * [**New Lines**](settings-text-editor-csharp-code-style-formatting-new-lines-01.png)
+  * [**Spacing**](settings-text-editor-csharp-code-style-formatting-spacing-01.png)
+  * [**Wrapping**](settings-text-editor-csharp-code-style-formatting-wrapping-01.png)
+* [**Naming**](settings-text-editor-csharp-code-style-naming-01.png)
+* [**Intellisense**](settings-text-editor-csharp-code-style-intellisense-01.png)
 
 ### GitHub CoPilot
 
