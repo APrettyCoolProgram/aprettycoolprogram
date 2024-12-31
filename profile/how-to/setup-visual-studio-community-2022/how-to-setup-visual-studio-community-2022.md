@@ -176,26 +176,27 @@ Things to remember about this list:
 
 No modifications...yet.
 
-### Code Style
-
-#### C#
+### Code Style - C#
 
 Most of the settings in Code Style can have one of the following Severities:
 
-* `Error`  
-  Violations appear as build errors and cause builds to fail.
+| Severity | Description |
+| -------- | ----------- |
+| `Error` | Violations appear as build errors and cause builds to fail. |
+| `Refactoring Only` | Violations aren't visible to the user.|
+| `Suggestion` | Violations appear as build messages and as suggestions in the Visual Studio IDE. |
+| `Warning` |  Violations appear as build warnings but do not cause builds to fail. |
 
-* `Refactoring Only`  
-  Violations aren't visible to the user.
+### General
 
-* `Suggestion`  
-  Violations appear as build messages and as suggestions in the Visual Studio IDE.
+    * [**1**](./screenshots/settings-text-editor-csharp-code-style-general-01.png) | * [**2**](./screenshots/settings-text-editor-csharp-code-style-general-02.png)
 
-* `Warning`  
-  Violations appear as build warnings but do not cause builds to fail.
-
-* General
-
+settings-text-editor-csharp-code-style-formatting-indentation-01
+settings-text-editor-csharp-code-style-formatting-new-lines-01
+settings-text-editor-csharp-code-style-formatting-spacing-01
+settings-text-editor-csharp-code-style-formatting-wrapping-01
+settings-text-editor-csharp-code-style-naming-01
+settings-text-editor-csharp-code-style-intellisense-01
 
 ### GitHub CoPilot
 
