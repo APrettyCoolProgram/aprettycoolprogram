@@ -1,18 +1,8 @@
 <!--
-    Last updated: 241230
-    TODO:
-        Settings for:
-            Better Comments
-            Collapse Comments
-            CoPilot
-            Productivity Power Tools
-            Viasfora
-            VSColorOutput
-            XAML Styler
-
+    Last updated: 241231
 -->
 
-> **This document was last updated** December 30, 2024  
+> **This document was last updated** December 31, 2024  
 
 <div align="center">
 
@@ -138,26 +128,26 @@ Things to remember about this list:
 
 * Environment
   * [**General**](./screenshots/settings-environment-general-01.png)
-  * **Clean Solution** ([details]())
+  * **Clean Solution** ([details](#clean-solution))
   * [**Documents**](./screenshots/settings-environment-documents-01.png)
-  * **Fonts and Colors** ([details]())
+  * **Fonts and Colors** ([details](#fonts-and-colors))
   * [**Tabs and Windows**](./screenshots/settings-environment-tabs-and-windows-01.png)
   * [**Trailing Whitespace**](./screenshots/settings-environment-trailing-whitespace-01.png)
   * [**Task List**](./screenshots/settings-environment-task-list-01.png)
-  * **Tweaks 2022** ([details]())
+  * **Tweaks 2022** ([details](#tweaks-2022))
   * [**General**](./screenshots/settings-projects-and-solutions-general-01.png)
   * [**Build and Run**](./screenshots/settings-projects-and-solutions-build-and-run-01.png)
 * Text Editor
   * [**General**](./screenshots/settings-text-editor-general-01.png)
   * [**Advanced**](./screenshots/settings-text-editor-advanced-01.png)
-  * **Code Cleanup** ([details]())
+  * **Code Cleanup** ([details](#code-cleanup))
   * All Languages
     * [**General**](./screenshots/settings-text-editor-all-languages-general-01.png)
     * [**Scroll Bars**](./screenshots/settings-text-editor-all-languages-scroll-bars-01.png)
     * [**Tabs**](./screenshots/settings-text-editor-all-languages-tabs-01.png)
   * C#
     * **Advanced** [1](./screenshots/settings-text-editor-csharp-advanced-01.png) | [2](./screenshots/settings-text-editor-csharp-advanced-02.png)
-    * **Code Style** ([details]())
+    * **Code Style** ([details](#code-style))
     * [**Intellisense**](./screenshots/settings-text-editor-csharp-intellisense-01.png)
   * JSON
   * Markdown
@@ -168,15 +158,24 @@ Things to remember about this list:
       * [**Spacing**](./screenshots/settings-text-editor-xaml-formatting-spacing-01.png)
     * [**Miscellaneous**](./screenshots/settings-text-editor-xaml-miscellaneous-01.png)
   * GitHub
-    * [CoPilot]()
+    * [CoPilot](#github-copilot)
 
 ## Details
 
 ### Fonts and Colors
 
-No modifications...yet.
+Modification will be made to these settings after using the current setup for a while.
 
-### Code Style - C#
+### Code Cleanup
+
+* [Profile 1](./screenshots/code-cleanup-profile-1-01.png)
+* [Profile 2](./screenshots/code-cleanup-profile-2-01.png)
+
+#### Profile 2
+
+### Code Style
+
+#### C#
 
 Most of the settings in Code Style can have one of the following Severities:
 
@@ -199,13 +198,21 @@ Most of the settings in Code Style can have one of the following Severities:
 
 ### GitHub CoPilot
 
+Modification will be made to these settings after using the current setup for a while.
+
 ## Extension specific
 
 ### Better Comments
 
+I'm not currently using this extension, so no setting modifications yet.
+
 ### Clean Solution
 
+No setting changes.
+
 ### Collapse Comments
+
+No setting changes.
 
 ### Editor Guidelines
 
@@ -215,11 +222,20 @@ Most of the settings in Code Style can have one of the following Severities:
 
 ### Productivity Power Tools
 
+No setting changes.
+
 ### Tweaks 2022
+
+No setting changes.
 
 ### Viasfora
 
+No setting changes.
+
 ### VSColorOutput64
 
+No setting changes.
+
 ### XAML Styler
-  
+
+No setting changes.
