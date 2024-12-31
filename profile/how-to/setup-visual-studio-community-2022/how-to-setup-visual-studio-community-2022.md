@@ -32,13 +32,15 @@ CONTENTS
 [Installing Visual Studio 2022 extensions]()  
 [Setting up Visual Studio 2022]()  
 
+This document will walk through the steps I take to setup my Visual Studio 2022 environment for developing web services in C#.
+
 # Installing Visual Studio 2022
 
-Download the installer for [Visual Studio Community 2022](https://visualstudio.microsoft.com/vs/).
+Installing Visual Studio 2022 is pretty straight forward, just download the [installer](https://visualstudio.microsoft.com/vs/) and follow the prompts.
 
 ## Visual Studio Workflows
 
-Choose the workflows you will need for development.
+The bulk of the install process is choosing the workflows you will need for development.
 
 For example, I've installed the following workflows for developing web services using C#:
 
@@ -59,10 +61,6 @@ To install an extension:
 2. Click the `Browse` tab
 3. Search for the extension name
 4. Click "Install"
-
-For example (using a random extension):
-
-![example](./screenshots/extension-install-example-01.png)
 
 ## Recommended extensions
 
