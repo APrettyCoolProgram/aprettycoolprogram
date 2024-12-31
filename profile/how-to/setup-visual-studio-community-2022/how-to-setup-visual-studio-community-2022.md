@@ -83,7 +83,7 @@ Microsoft has an extension pack that contains a bunch of individual extensions t
 * [Add New File (64-bit)](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.AddNewFile64)
 * [Clean Solution](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.CleanSolution)
 * [Color Preview](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.ColorPreview)
-* [Editor Enhangements](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorEnhancements64)
+* [Editor Enhancements](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorEnhancements64)
 * [File Differ](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.FileDiffer)
 * [File Icons](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.FileIcons)
 * [Image Optimizer (64-bit)](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.ImageOptimizer64bit)
