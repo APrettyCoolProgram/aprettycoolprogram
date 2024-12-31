@@ -36,7 +36,7 @@ CONTENTS
 
 Download the installer for [Visual Studio Community 2022](https://visualstudio.microsoft.com/vs/).
 
-## Choosing the workflows to install
+## Visual Studio Workflows
 
 Choose the workflows you will need for development.
 
