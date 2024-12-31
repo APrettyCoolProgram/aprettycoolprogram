@@ -141,13 +141,13 @@ Things to remember about this list:
 
 * Environment
   * [**General**](./screenshots/settings-environment-general-01.png)
-  * [**Clean Solution**] ([details]())
+  * **Clean Solution** ([details]())
   * [**Documents**](./screenshots/settings-environment-documents-01.png)
   * **Fonts and Colors** ([details]())
   * [**Tabs and Windows**](./screenshots/settings-environment-tabs-and-windows-01.png)
   * [**Trailing Whitespace**](./screenshots/settings-environment-trailing-whitespace-01.png)
   * [**Task List**](./screenshots/settings-environment-task-list-01.png)
-  * [**Tweaks 2022**] ([details]())
+  * **Tweaks 2022** ([details]())
   * [**General**](./screenshots/settings-projects-and-solutions-general-01.png)
   * [**Build and Run**](./screenshots/settings-projects-and-solutions-build-and-run-01.png)
 * Text Editor
