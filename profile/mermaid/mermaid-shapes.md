@@ -1,21 +1,103 @@
 
 # Mermaid shapes
 
+
+## Processes
+
+```mermaid
+flowchart TB
+
+    subgraph StartWorkflow ["Start"]
+        direction TB
+        %% Components
+        Start@{shape: circle, label: "Start the workflow\n[circle]"}
+        TerminalStart@{shape: stadium, label: "Start the workflow\n[stadium]"}
+        StartSmall@{shape: sm-circ, label: "Start the workflow\n[sm-circ]"}
+        %% Layout : none
+        %% Styles : global
+    end
+
+    subgraph ProcessWorkflow ["Processes"]
+        direction TB
+        %% Components
+        Process@{shape: rect, label: "Execute a process\n[rect]"}
+        AlternativeProcess@{shape: rounded, label: "Execute an\nalternate process\n[rounded]"}
+        SubProcess@{shape: fr-rect, label: "Execute a\nsub-process\n[fr-rect]"}
+        DividedProcess@{shape: div-rect, label: "Execute a\ndivided process\n[div-rect]"}
+        LinedShadedProcess@{shape: lin-rect, label: "Execute a\nLined/Shaded\nProcess\n[lin-rect]"}
+        TaggedProcess@{shape: tag-rect, label: "Execute a\ntagged\nprocess\n[tag-rect]"}
+        %% Layout : none
+        %% Styles : global
+    end
+    
+    subgraph DocumentationWorkflow ["Documentation"]
+        direction LR
+        %% Components
+        Document@{shape: doc, label: "This is a document\n[doc]"}
+        LinedDocument@{shape: lin-doc, label: "This is a\nlined document\n[lin-doc]"}
+        MultiDocument@{shape: docs, label: "This is a\nmulti-document\n[docs]"}
+        TaggedDocument@{shape: tag-doc, label: "This is a\ntagged document\n[tag-doc]"}
+        %% Layout : none
+        %% Styles : global
+    end
+
+    subgraph StorageWorkflow ["Storage"]
+        direction LR
+        %% Components
+    Database@{shape: cyl, label: "Database\n[cyl]"}
+    DirectAccessStorage@{shape: h-cyl, label: "Direct Access\nStorage\n[h-cyl]"}
+    InternalStorage@{shape: win-pane, label: "Internal\nstorage\n[win-pane]"}
+        %% Layout : none
+        %% Styles : global
+    end
+
+
+
+
+    %% Layout
+    StartWorkflow --> ProcessWorkflow
+    ProcessWorkflow --> DocumentationWorkflow
+    ProcessWorkflow --> StorageWorkflow
+    %%Stop@{shape: dbl-circ, label: "Stop\n[dbl-circ]"}
+    %%StopSmall@{shape: fr-circ, label: "Stop\n[fr-circ]"}
+    %%TerminalPointStop@{shape: stadium, label: "Terminal stop\n[stadium]"}
+
+    %% Layout
+    %%Start --> Processes --> Event --> SubProcess --> TaggedProcess --> DividedProcess --> 
+    %%TerminalPointStart --> Processes
+    %%StartSmall --> Processes
+    %%LinedShadedProcess --> Stop
+    %%LinedShadedProcess --> TerminalPointStop
+    %%LinedShadedProcess --> StopSmall
+    %% Styles
+    classDef default fill:#000, stroke:#FFF, stroke-width:1px
+```
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
 ## Comments and text
 
 ```mermaid
 flowchart LR
     %% Components
-    Comment@{shape: brace, label: "Comment\n[brace]"}
-    CommentRight@{shape: brace-r, label: "Comment\n[brace-r]"}
-    CommentBoth@{shape: braces, label: "Comment\n[braces]"}
-    TextBlock@{shape: text, label: "Text block\n[text]"}
+    Comment@{shape: brace, label: "This is a left-bracket comment\n[brace]"}
+    CommentRight@{shape: brace-r, label: "This is a right-bracket comment\n[brace-r]"}
+    CommentBoth@{shape: braces, label: "This is a normal comment\n[braces]"}
+    TextBlock@{shape: text, label: "This is a block of text\n[text]"}
     %% Layout
-    Comment --- CommentRight --- CommentBoth
+    Comment
+    CommentRight
+    CommentBoth
     TextBlock
     %% Styles
     classDef default fill:#000, stroke:#FFF, stroke-width:1px
-
 ```
 
 # Data
@@ -39,7 +121,7 @@ flowchart LR
 ```mermaid
 flowchart LR
     %% Components
-    Document@{shape: doc, label: "Document\n[doc]"}
+    Document@{shape: doc, label: "This is a document\n[doc]"}
     LinedDocument@{shape: lin-doc, label: "Lined\ndocument\n[lin-doc]"}
     MultiDocument@{shape: docs, label: "Multi-\ndocument\n[docs]"}
     TaggedDocument@{shape: tag-doc, label: "Tagged\ndocument\n[tag-doc]"}
@@ -121,7 +203,7 @@ flowchart LR
     PaperTape@{shape: flag, label: "Paper tape\n[flag]"}
     PriorityAction@{shape: trap-b, label: "Priority\naction\n[trap-b]"}
     Summary@{shape: cross-circ, label: "Summary\n[cross-circ]"}
-    TerminalPoint@{shape: stadium, label: "Terminal\npoint\n[stadium]"}
+    
     %% Layout
     Card --> Collate --> ComLink
     Delay -->Display
@@ -130,73 +212,7 @@ flowchart LR
     Odd
     PaperTape --> PriorityAction
     Summary
-    TerminalPoint
     %% Styles
     classDef default fill:#000, stroke:#FFF, stroke-width:1px
 ```
-
-# Processes_
-
-```mermaid
-flowchart LR
-    %% Components
-    DividedProcess@{shape: div-rect, label: "Divided process\n[div-rect]"}
-    LinedShadedProcess@{shape: lin-rect, label: "Lined/Shaded\nProcess\n[lin-rect]"}
-    Process@{shape: rect, label: "Process\n[rect]"}
-    Start@{shape: circle, label: "Start\n[circle]"}
-    StartSmall@{shape: sm-circ, label: "Start\n[sm-circ]"}
-    Stop@{shape: dbl-circ, label: "Stop\n[dbl-circ]"}
-    StopSmall@{shape: fr-circ, label: "Stop\n[fr-circ]"}
-    SubProcess@{shape: fr-rect, label: "Sub-process\n[fr-rect]"}
-    TaggedProcess@{shape: tag-rect, label: "Tagged\nprocess\n[tag-rect]"}
-    %% Layout
-    DividedProcess
-    LinedShadedProcess
-    Process
-    Start --> StartSmall --> Stop --> StopSmall
-    SubProcess
-    TaggedProcess
-    %% Styles
-    classDef default fill:#000, stroke:#FFF, stroke-width:1px
-```
-
-## Processes
-
-```mermaid
-flowchart LR
-    %% Components
-    DividedProcess@{shape: div-rect, label: "Divided process\n[div-rect]"}
-    Event@{shape: rounded, label: "Event or\nprocess\n[rounded]"}
-    LinedShadedProcess@{shape: lin-rect, label: "Lined/Shaded\nProcess\n[lin-rect]"}
-    Process@{shape: rect, label: "Process\n[rect]"}
-    Start@{shape: circle, label: "Start\n[circle]"}
-    StartSmall@{shape: sm-circ, label: "Start\n[sm-circ]"}
-    Stop@{shape: dbl-circ, label: "Stop\n[dbl-circ]"}
-    StopSmall@{shape: fr-circ, label: "Stop\n[fr-circ]"}
-    SubProcess@{shape: fr-rect, label: "Sub-process\n[fr-rect]"}
-    TaggedProcess@{shape: tag-rect, label: "Tagged\nprocess\n[tag-rect]"}
-    %% Layout
-    Start --> Process --> Event --> SubProcess --> TaggedProcess --> DividedProcess --> LinedShadedProcess--> Stop
-
-
-    
-    
-    %% Styles
-    classDef default fill:#000, stroke:#FFF, stroke-width:1px
-```
-
-# Storage
-
-```mermaid
-flowchart LR
-    %% Component
-    Database@{shape: cyl, label: "Database\n[cyl]"}
-    DirectAccessStorage@{shape: h-cyl, label: "Direct Access\nStorage\n[h-cyl]"}
-    InternalStorage@{shape: win-pane, label: "Internal\nstorage\n[win-pane]"}
-    %% Layout
-    Database --> DirectAccessStorage
-    InternalStorage
-    %% Styles
-    classDef default fill:#000, stroke:#FFF, stroke-width:1px
-```
-
+-->
