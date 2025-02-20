@@ -12,6 +12,7 @@ flowchart TB
         Start@{shape: circle, label: "Start the workflow\n[circle]"}
         TerminalStart@{shape: stadium, label: "Start the workflow\n[stadium]"}
         StartSmall@{shape: sm-circ, label: "Start the workflow\n[sm-circ]"}
+        Comment@{shape: brace, label: "[sm-circ]"}
         %% Layout : none
         %% Styles : global
     end
@@ -75,7 +76,8 @@ flowchart TB
         %% Components
         Stop@{shape: circle, label: "Stop the workflow\n[circle]"}
         TerminalStop@{shape: stadium, label: "Stop the workflow\n[stadium]"}
-        StopSmall@{shape: sm-circ, label: "Stop the workflow\n[sm-circ]"}
+        StopSmall@{shape: fr-circ, label: "Stop the workflow\n[fr-circ]"}
+        Comment@{shape: brace, label: "[fr-circ]"}
         %% Layout : none
         %% Styles : global
     end
