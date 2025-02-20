@@ -1,8 +1,7 @@
 
 # Mermaid shapes
 
-
-## Processes
+## Workflows
 
 ```mermaid
 flowchart TB
@@ -44,43 +43,56 @@ flowchart TB
     subgraph StorageWorkflow ["Storage"]
         direction LR
         %% Components
-    Database@{shape: cyl, label: "Database\n[cyl]"}
-    DirectAccessStorage@{shape: h-cyl, label: "Direct Access\nStorage\n[h-cyl]"}
-    InternalStorage@{shape: win-pane, label: "Internal\nstorage\n[win-pane]"}
+        Database@{shape: cyl, label: "Database\n[cyl]"}
+        DirectAccessStorage@{shape: h-cyl, label: "Direct Access\nStorage\n[h-cyl]"}
+        InternalStorage@{shape: win-pane, label: "Internal\nstorage\n[win-pane]"}
         %% Layout : none
         %% Styles : global
     end
 
+    subgraph InputOutputWorkflow ["Input/Output"]
+        direction LR
+        %% Components
+        DataInputOutputRight@{shape: lean-r, label: "Input or\noutput\n[lean-r]"}
+        DataInputOutputLeft@{shape: lean-l, label: "Input or\noutput\n[lean-l]"}
+        ManualInput@{shape: sl-rect, label: "Manual input\n[sl-rect]"}
+        %% Layout : none
+        %% Styles : global
+    end
 
+    subgraph OtherWorkflow ["Other"]
+        direction LR
+        %% Components
+        Decision@{shape: diam, label: "Decision\n[diam]"}
+        ManualOperation@{shape: trap-t, label: "Manual\nOperation\n[trap-t]"}
+        PrepareConditional@{shape: hex, label: "Preparation\nconditional/step\n[hex]"}
+        %% Layout : none
+        %% Styles : global
+    end
 
+    subgraph StopWorkflow ["Stop"]
+        direction TB
+        %% Components
+        Stop@{shape: circle, label: "Stop the workflow\n[circle]"}
+        TerminalStop@{shape: stadium, label: "Stop the workflow\n[stadium]"}
+        StopSmall@{shape: sm-circ, label: "Stop the workflow\n[sm-circ]"}
+        %% Layout : none
+        %% Styles : global
+    end
 
     %% Layout
     StartWorkflow --> ProcessWorkflow
     ProcessWorkflow --> DocumentationWorkflow
     ProcessWorkflow --> StorageWorkflow
-    %%Stop@{shape: dbl-circ, label: "Stop\n[dbl-circ]"}
-    %%StopSmall@{shape: fr-circ, label: "Stop\n[fr-circ]"}
-    %%TerminalPointStop@{shape: stadium, label: "Terminal stop\n[stadium]"}
-
-    %% Layout
-    %%Start --> Processes --> Event --> SubProcess --> TaggedProcess --> DividedProcess --> 
-    %%TerminalPointStart --> Processes
-    %%StartSmall --> Processes
-    %%LinedShadedProcess --> Stop
-    %%LinedShadedProcess --> TerminalPointStop
-    %%LinedShadedProcess --> StopSmall
+    ProcessWorkflow --> InputOutputWorkflow
+    ProcessWorkflow --> OtherWorkflow
+    DocumentationWorkflow --> StopWorkflow
+    StorageWorkflow --> StopWorkflow
+    InputOutputWorkflow --> StopWorkflow
+    OtherWorkflow --> StopWorkflow
     %% Styles
     classDef default fill:#000, stroke:#FFF, stroke-width:1px
 ```
-
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
 
 ## Comments and text
 
@@ -96,94 +108,6 @@ flowchart LR
     CommentRight
     CommentBoth
     TextBlock
-    %% Styles
-    classDef default fill:#000, stroke:#FFF, stroke-width:1px
-```
-
-# Data
-
-```mermaid
-flowchart LR
-    %% Components
-    ForkJoin@{shape: fork, label: "Fork/Join\n[fork]"}
-    Junction@{shape: f-circ, label: "Junction\n[f-circ]"}
-    StoredData@{shape: bow-rect, label: "Stored\ndata\n[bow-rect]"}
-    %% Layout
-    ForkJoin
-    Junction
-    StoredData
-    %% Styles
-    classDef default fill:#000, stroke:#FFF, stroke-width:1px
-```
-
-# Documents
-
-```mermaid
-flowchart LR
-    %% Components
-    Document@{shape: doc, label: "This is a document\n[doc]"}
-    LinedDocument@{shape: lin-doc, label: "Lined\ndocument\n[lin-doc]"}
-    MultiDocument@{shape: docs, label: "Multi-\ndocument\n[docs]"}
-    TaggedDocument@{shape: tag-doc, label: "Tagged\ndocument\n[tag-doc]"}
-    %% Layout
-    Document
-    LinedDocument
-    MultiDocument
-    %% Styles
-    classDef default fill:#000, stroke:#FFF, stroke-width:1px
-```
-
-# Files
-
-```mermaid
-flowchart LR
-    %% Components
-    Extract@{shape: tri, label: "Extract\n[tri]"}
-    ManualFile@{shape: flip-tri, label: "Manual\nfile\n[flip-tri]"}
-    %% Layout
-    Extract
-    ManualFile
-    %% Styles
-    classDef default fill:#000, stroke:#FFF, stroke-width:1px
-```
-
-## Input/output
-
-```mermaid
-flowchart LR
-    %% Components
-    DataInputOutputRight@{shape: lean-r, label: "Input or\noutput\n[lean-r]"}
-    DataInputOutputLeft@{shape: lean-l, label: "Input or\noutput\n[lean-l]"}
-    ManualInput@{shape: sl-rect, label: "Manual input\n[sl-rect]"}
-    %% Layout
-    DataInputOutputRight --> DataInputOutputLeft
-    ManualInput
-    %% Styles
-    classDef default fill:#000, stroke:#FFF, stroke-width:1px
-```
-
-# Interaction
-
-```mermaid
-flowchart LR
-    %% Components
-    Decision@{shape: diam, label: "Decision\n[diam]"}
-    %% Layout
-    Decision
-    %% Styles
-    classDef default fill:#000, stroke:#FFF, stroke-width:1px
-```
-
-# Operations
-
-```mermaid
-flowchart LR
-    %% Components
-    ManualOperation@{shape: trap-t, label: "Manual\nOperation\n[trap-t]"}
-    PrepareConditional@{shape: hex, label: "Preparation\nconditional/step\n[hex]"}
-    %% Layout
-    ManualOperation
-    PrepareConditional
     %% Styles
     classDef default fill:#000, stroke:#FFF, stroke-width:1px
 ```
