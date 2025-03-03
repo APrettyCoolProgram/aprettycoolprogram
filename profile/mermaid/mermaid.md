@@ -216,7 +216,9 @@ flowchart LR
   Mid --> MidString
   Dark --> DarkString
   %% Styles
-
+  classDef Light stroke:#154360,stroke-width:3px,fill:#a9cce3,color:#154360  
+  classDef Mid stroke:#154360,stroke-width:3px,fill:#5499c7,color:#eaf2f8
+  classDef Dark stroke:#eaf2f8,stroke-width:3px,fill:#2471a3,color:#eaf2f8
   class Light Light
   class Mid Mid
   class Dark Dark
