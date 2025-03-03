@@ -308,9 +308,9 @@ flowchart LR
   White@{shape: rounded, label: "White"}
   WhiteString@{shape: brace, label: "stroke:#000000,stroke-width:3px,fill:#ffffff,color:#000000  "}
   GreyOne@{shape: rounded, label: "Grey #1"}
-  GreyOneString@{shape: brace, label: "stroke:#7d6608,stroke-width:3px,fill:#f4d03f,color:#7d6608"}
+  GreyOneString@{shape: brace, label: "stroke:#000000,stroke-width:3px,fill:#7b7d7d,color:#ffffff"}
   GreyTwo@{shape: rounded, label: "Grey #2"}
-  GreyTwoString@{shape: brace, label: "stroke:#7d6608,stroke-width:3px,fill:#f4d03f,color:#7d6608"}
+  GreyTwoString@{shape: brace, label: "stroke:#FFFFFF,stroke-width:3px,fill:#7b7d7d,color:#ffffff"}
   Black@{shape: rounded, label: "Black"}
   BlackString@{shape: brace, label: "stroke:#ffffff,stroke-width:3px,fill:#000000,color:#ffffff"}
   %% Layout
