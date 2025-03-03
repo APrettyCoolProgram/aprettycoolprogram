@@ -206,11 +206,11 @@ title: Blue
 flowchart LR
   %% Components
   Light@{shape: rounded, label: "Light"}
-  LightString@{shape: brace, label: "stroke:#512e5f,stroke-width:3px,fill:#d7bde2,color:#512e5f"}
+  LightString@{shape: brace, label: "stroke:#154360,stroke-width:3px,fill:#a9cce3,color:#154360"}
   Mid@{shape: rounded, label: "Mid"}
-  MidString@{shape: brace, label: "stroke:#512e5f,stroke-width:3px,fill:#af7ac5,color:#f5eef8"}
+  MidString@{shape: brace, label: "stroke:#154360,stroke-width:3px,fill:#5499c7,color:#eaf2f8"}
   Dark@{shape: rounded, label: "Dark"}
-  DarkString@{shape: brace, label: "stroke:#stroke:#f5eef8,stroke-width:3px,fill:#884ea0,color:#f5eef8"}
+  DarkString@{shape: brace, label: "stroke:#eaf2f8,stroke-width:3px,fill:#2471a3,color:#eaf2f8"}
   %% Layout
   Light --> LightString
   Mid --> MidString
@@ -281,11 +281,11 @@ title: Orange
 flowchart LR
   %% Components
   Light@{shape: rounded, label: "Light"}
-  LightString@{shape: brace, label: "stroke:#7d6608,stroke-width:3px,fill:#f9e79f,color:#7d6608"}
+  LightString@{shape: brace, label: "stroke:#6e2c00,stroke-width:3px,fill:#edbb99,color:#6e2c00"}
   Mid@{shape: rounded, label: "Mid"}
-  MidString@{shape: brace, label: "stroke:#7d6608,stroke-width:3px,fill:#f4d03f,color:#7d6608"}
+  MidString@{shape: brace, label: "stroke:#6e2c00,stroke-width:3px,fill:#dc7633,color:#fbeee6"}
   Dark@{shape: rounded, label: "Dark"}
-  DarkString@{shape: brace, label: "stroke:#fef9e7,stroke-width:3px,fill:#d4ac0d,color:#fef9e7"}
+  DarkString@{shape: brace, label: "stroke:#fbeee6,stroke-width:3px,fill:#ba4a00,color:#fbeee6"}
   %% Layout
   Light --> LightString
   Mid --> MidString
