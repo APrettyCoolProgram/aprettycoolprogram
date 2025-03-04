@@ -143,6 +143,30 @@ flowchart LR
     classDef default fill:#000, stroke:#FFF, stroke-width:1px
 ```
 
+# Links
+
+```mermaid
+flowchart LR
+    %% Components
+    A@{shape: rounded, label: "-.->"}
+    B@{shape: rounded, label: "--->"}
+    C@{shape: rounded, label: "===>"}
+    HiddenA@{shape: rounded}
+    E@{shape: rounded, label: "--o>"}
+    F@{shape: rounded, label: "==o"}
+    HiddenB@{shape: rounded}
+    H@{shape: rounded, label: "--x>"}
+    I@{shape: rounded, label: "==x>"}
+    HiddenC@{shape: rounded}
+    %% Layout
+    A -.-> B --> C ==> HiddenA
+    E --o F ==o HiddenB
+    H --x I ==x HiddenC
+    %% Styles
+    classDef Hidden display: none;
+    class HiddenA,HiddenB,HiddenC Hidden
+```
+
 ***
 <br>
 <br>
@@ -327,4 +351,74 @@ flowchart LR
   class GreyOne GreyOne
   class GreyTwo GreyTwo
   class Black Black
+```
+
+## Outline
+
+```mermaid
+flowchart LR
+  %% Components
+  Dash3_3@{shape: rounded, label: "Dash outline"}
+  Dash3_3String@{shape: brace, label: "stroke-dasharray: 3 3"}
+  Dash5_5@{shape: rounded, label: "Dash outline"}
+  Dash5_5String@{shape: brace, label: "stroke-dasharray: 5 5"}
+  Dash7_7@{shape: rounded, label: "Dash outline"}
+  Dash7_7String@{shape: brace, label: "stroke-dasharray: 7 7"}
+  %% Layout
+  Dash3_3 --> Dash3_3String
+  Dash5_5 --> Dash5_5String
+  Dash7_7 --> Dash7_7String
+  %% Styles
+  classDef Dash3_3 stroke:#ffffff,stroke-width:3px,stroke-dasharray: 3 3,fill:#000000,color:#ffffff
+  class Dash3_3 Dash3_3
+  classDef Dash5_5 stroke:#ffffff,stroke-width:3px,stroke-dasharray: 5 5,fill:#000000,color:#ffffff
+  class Dash5_5 Dash5_5
+  classDef Dash7_7 stroke:#ffffff,stroke-width:3px,stroke-dasharray: 7 7,fill:#000000,color:#ffffff
+  class Dash7_7 Dash7_7
+```
+
+## Font size
+
+```mermaid
+flowchart LR
+  %% Components
+  FontPoint8@{shape: rounded, label: "8"}
+  FontPoint8String@{shape: brace, label: "font-size:8pt"}
+  FontPoint12@{shape: rounded, label: "12pt (default)"}
+  FontPoint12String@{shape: brace, label: "font-size:12pt"}
+  FontPoint16@{shape: rounded, label: "20"}
+  FontPoint16String@{shape: brace, label: "font-size:16pt"}
+  %% Layout
+  FontPoint8 --> FontPoint8String
+  FontPoint12 --> FontPoint12String
+  FontPoint16 --> FontPoint16String
+  %% Styles
+  classDef FontPoint8 stroke:#ffffff,stroke-width:2px,fill:#000000,color:#ffffff,font-size:8pt
+  class FontPoint8 FontPoint8
+  classDef FontPoint12 stroke:#ffffff,stroke-width:2px,fill:#000000,color:#ffffff,font-size:12pt
+  class FontPoint12 FontPoint12
+  classDef FontPoint16 stroke:#ffffff,stroke-width:2px,fill:#000000,color:#ffffff,font-size:16pt
+  class FontPoint16 FontPoint16
+```
+
+```mermaid
+flowchart LR
+  %% Components
+  FontPoint8@{shape: rounded, label: "8"}
+  FontPoint8String@{shape: brace, label: "font-size:8pt"}
+  FontPoint12@{shape: rounded, label: "12pt (default)"}
+  FontPoint12String@{shape: brace, label: "font-size:12pt"}
+  FontPoint16@{shape: rounded, label: "20"}
+  FontPoint16String@{shape: brace, label: "font-size:16pt"}
+  %% Layout
+  FontPoint8 --> FontPoint8String
+  FontPoint12 --> FontPoint12String
+  FontPoint16 --> FontPoint16String
+  %% Styles
+  classDef StrokeRed stroke:#fff3,stroke-width:2px
+  class FontPoint8 FontPoint8
+  classDef FontPoint12 stroke:#ffffff,stroke-width:2px,fill:#000000,color:#ffffff,font-size:12pt
+  class FontPoint12 FontPoint12
+  classDef FontPoint16 stroke:#ffffff,stroke-width:2px,fill:#000000,color:#ffffff,font-size:16pt
+  class FontPoint16 FontPoint16
 ```
