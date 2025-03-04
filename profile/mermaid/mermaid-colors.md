@@ -1,6 +1,6 @@
 <!-- u250303  -->
 
-# Mermaid colors
+# Mermaid: Colors
 
 ```mermaid
 ---
