@@ -180,7 +180,7 @@ title: Red
 flowchart LR
   %% Components
   Light@{shape: rounded, label: "Light"}
-  LightString@{shape: brace, label: "#641E16,stroke-width:3px,fill:#E6B0AA,color:#641E16"}
+  LightString@{shape: brace, label: "stroke:#641E16,stroke-width:3px,fill:#E6B0AA,color:#641E16"}
   Mid@{shape: rounded, label: "Mid"}
   MidString@{shape: brace, label: "stroke:#641E16,stroke-width:3px,fill:#CD6155,color:#F9EBEA"}
   Dark@{shape: rounded, label: "Dark"}
