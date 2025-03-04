@@ -183,6 +183,9 @@ flowchart LR
 ```
 
 ```mermaid
+---
+title: Yellow
+---
 flowchart LR
   %% Components
   Y0@{shape: rounded, label: "Y0_"}
@@ -225,6 +228,9 @@ flowchart LR
 ```
 
 ```mermaid
+---
+title: Orange
+---
 flowchart LR
   %% Components
   E0@{shape: rounded, label: "E0_"}
@@ -267,106 +273,91 @@ flowchart LR
 ```
 
 ```mermaid
+---
+title: White
+---
 flowchart LR
   %% Components
+  W0@{shape: rounded, label: "W0_"}
   W1@{shape: rounded, label: "W1_"}
   W2@{shape: rounded, label: "W2_"}
   W3@{shape: rounded, label: "W3_"}
   W4@{shape: rounded, label: "W4_"}
   W5@{shape: rounded, label: "W5_"}
+  W6@{shape: rounded, label: "W6_"}
+  W7@{shape: rounded, label: "W7_"}
+  W8@{shape: rounded, label: "W8_"}
+  W9@{shape: rounded, label: "W9_"}
   %% Layout
-  W1:::W1_ --> W2:::W2_ --> W3:::W3_ --> W4:::W4_ --> W5:::W5_ 
+  W0:::W0_ --> W1:::W1_ --> W2:::W2_ --> W3:::W3_ --> W4:::W4_
+  W5:::W5_ --> W6:::W6_ --> W7:::W7_ --> W8:::W8_ --> W9:::W9_
   %% Styles
-  classDef W1_ stroke:#784212,stroke-width:3px,fill:#fdf2e9,color:#784212
-  classDef W2_ stroke:#784212,stroke-width:3px,fill:#f8c471,color:#784212  
-  classDef W3_ stroke:#fdf2e9,stroke-width:3px,fill:#f5b041,color:#fdf2e9
-  classDef W4_ stroke:#fdf2e9,stroke-width:3px,fill:#ca6f1e,color:#fdf2e9
-  classDef W5_ stroke:#fdf2e9,stroke-width:3px,fill:#784212,color:#fdf2e9
+  classDef W0_ stroke:#FFFFFF,stroke-width:3px,fill:#FFFFFF,color:#000000
+  classDef W1_ stroke:#641e16,stroke-width:3px,fill:#FFFFFF,color:#641e16
+  classDef W2_ stroke:#af7ac5,stroke-width:3px,fill:#FFFFFF,color:#af7ac5
+  classDef W3_ stroke:#5499c7,stroke-width:3px,fill:#FFFFFF,color:#5499c7
+  classDef W4_ stroke:#52be80,stroke-width:3px,fill:#FFFFFF,color:#52be80
+  classDef W5_ stroke:#d4ac0d,stroke-width:3px,fill:#FFFFFF,color:#d4ac0d
+  classDef W6_ stroke:#ca6f1e,stroke-width:3px,fill:#FFFFFF,color:#ca6f1e 
+  classDef W7_ stroke:#7b7d7d,stroke-width:3px,fill:#FFFFFF,color:#7b7d7d
+  classDef W8_ stroke:#424949,stroke-width:3px,fill:#FFFFFF,color:#424949
+  classDef W9_ stroke:#000000,stroke-width:3px,fill:#FFFFFF,color:#000000
 ```
 
 ```text
-  classDef E1_ stroke:#784212,stroke-width:3px,fill:#fdf2e9,color:#784212
-  classDef E2_ stroke:#784212,stroke-width:3px,fill:#f8c471,color:#784212  
-  classDef E3_ stroke:#fdf2e9,stroke-width:3px,fill:#f5b041,color:#fdf2e9
-  classDef E4_ stroke:#fdf2e9,stroke-width:3px,fill:#ca6f1e,color:#fdf2e9
-  classDef E5_ stroke:#fdf2e9,stroke-width:3px,fill:#784212,color:#fdf2e9
+  classDef W0_ stroke:#FFFFFF,stroke-width:3px,fill:#FFFFFF,color:#000000
+  classDef W1_ stroke:#641e16,stroke-width:3px,fill:#FFFFFF,color:#641e16
+  classDef W2_ stroke:#af7ac5,stroke-width:3px,fill:#FFFFFF,color:#af7ac5
+  classDef W3_ stroke:#5499c7,stroke-width:3px,fill:#FFFFFF,color:#5499c7
+  classDef W4_ stroke:#52be80,stroke-width:3px,fill:#FFFFFF,color:#52be80
+  classDef W5_ stroke:#d4ac0d,stroke-width:3px,fill:#FFFFFF,color:#d4ac0d
+  classDef W6_ stroke:#ca6f1e,stroke-width:3px,fill:#FFFFFF,color:#ca6f1e 
+  classDef W7_ stroke:#7b7d7d,stroke-width:3px,fill:#FFFFFF,color:#7b7d7d
+  classDef W8_ stroke:#424949,stroke-width:3px,fill:#FFFFFF,color:#424949
+  classDef W9_ stroke:#000000,stroke-width:3px,fill:#FFFFFF,color:#000000
 ```
-
 
 ```mermaid
 ---
-title: White/Black
+title: Black
 ---
 flowchart LR
-  %% Components
-  White@{shape: rounded, label: "White"}
-  WhiteString@{shape: brace, label: "stroke:#000000,stroke-width:3px,fill:#ffffff,color:#000000  "}
-  GreyOne@{shape: rounded, label: "Grey #1"}
-  GreyOneString@{shape: brace, label: "stroke:#000000,stroke-width:3px,fill:#7b7d7d,color:#ffffff"}
-  GreyTwo@{shape: rounded, label: "Grey #2"}
-  GreyTwoString@{shape: brace, label: "stroke:#FFFFFF,stroke-width:3px,fill:#7b7d7d,color:#ffffff"}
-  Black@{shape: rounded, label: "Black"}
-  BlackString@{shape: brace, label: "stroke:#ffffff,stroke-width:3px,fill:#000000,color:#ffffff"}
-  %% Layout
-  White --> WhiteString
-  GreyOne --> GreyOneString
-  GreyTwo --> GreyTwoString
-  Black --> BlackString
-  %% Styles
-  classDef White stroke:#000000,stroke-width:3px,fill:#ffffff,color:#000000  
-  classDef GreyOne stroke:#000000,stroke-width:3px,fill:#7b7d7d,color:#ffffff
-  classDef GreyTwo stroke:#FFFFFF,stroke-width:3px,fill:#7b7d7d,color:#ffffff
-  classDef Black stroke:#ffffff,stroke-width:3px,fill:#000000,color:#ffffff
-  class White White
-  class GreyOne GreyOne
-  class GreyTwo GreyTwo
-  class Black Black
+  %% Components
+  B0@{shape: rounded, label: "B0_"}
+  B1@{shape: rounded, label: "B1_"}
+  B2@{shape: rounded, label: "B2_"}
+  B3@{shape: rounded, label: "B3_"}
+  B4@{shape: rounded, label: "B4_"}
+  B5@{shape: rounded, label: "B5_"}
+  B6@{shape: rounded, label: "B6_"}
+  B7@{shape: rounded, label: "B7_"}
+  B8@{shape: rounded, label: "B8_"}
+  B9@{shape: rounded, label: "B9_"}
+  %% Layout
+  B0:::B0_ --> B1:::B1_ --> B2:::B2_ --> B3:::B3_ --> B4:::B4_
+  B5:::B5_ --> B6:::B6_ --> B7:::W7_ --> B8:::B8_ --> B9:::B9_
+  %% Styles
+  classDef B0_ stroke:#FFFFFF,stroke-width:3px,fill:#000000,color:#FFFFFF
+  classDef B1_ stroke:#CD6155,stroke-width:3px,fill:#000000,color:#CD6155
+  classDef B2_ stroke:#af7ac5,stroke-width:3px,fill:#000000,color:#af7ac5
+  classDef B3_ stroke:#5499c7,stroke-width:3px,fill:#000000,color:#5499c7
+  classDef B4_ stroke:#52be80,stroke-width:3px,fill:#000000,color:#52be80
+  classDef B5_ stroke:#d4ac0d,stroke-width:3px,fill:#000000,color:#d4ac0d
+  classDef B6_ stroke:#ca6f1e,stroke-width:3px,fill:#000000,color:#ca6f1e 
+  classDef B7_ stroke:#7b7d7d,stroke-width:3px,fill:#000000,color:#7b7d7d
+  classDef B8_ stroke:#626567,stroke-width:3px,fill:#000000,color:#626567 
+  classDef B9_ stroke:#000000,stroke-width:3px,fill:#000000,color:#FFFFFF
 ```
 
-## Outline
-
-```mermaid
-flowchart LR
-  %% Components
-  Dash3_3@{shape: rounded, label: "Dash outline"}
-  Dash3_3String@{shape: brace, label: "stroke-dasharray: 3 3"}
-  Dash5_5@{shape: rounded, label: "Dash outline"}
-  Dash5_5String@{shape: brace, label: "stroke-dasharray: 5 5"}
-  Dash7_7@{shape: rounded, label: "Dash outline"}
-  Dash7_7String@{shape: brace, label: "stroke-dasharray: 7 7"}
-  %% Layout
-  Dash3_3 --> Dash3_3String
-  Dash5_5 --> Dash5_5String
-  Dash7_7 --> Dash7_7String
-  %% Styles
-  classDef Dash3_3 stroke:#ffffff,stroke-width:3px,stroke-dasharray: 3 3,fill:#000000,color:#ffffff
-  class Dash3_3 Dash3_3
-  classDef Dash5_5 stroke:#ffffff,stroke-width:3px,stroke-dasharray: 5 5,fill:#000000,color:#ffffff
-  class Dash5_5 Dash5_5
-  classDef Dash7_7 stroke:#ffffff,stroke-width:3px,stroke-dasharray: 7 7,fill:#000000,color:#ffffff
-  class Dash7_7 Dash7_7
-```
-
-## Font size
-
-```mermaid
-flowchart LR
-  %% Components
-  FontPoint8@{shape: rounded, label: "8"}
-  FontPoint8String@{shape: brace, label: "font-size:8pt"}
-  FontPoint12@{shape: rounded, label: "12pt (default)"}
-  FontPoint12String@{shape: brace, label: "font-size:12pt"}
-  FontPoint16@{shape: rounded, label: "20"}
-  FontPoint16String@{shape: brace, label: "font-size:16pt"}
-  %% Layout
-  FontPoint8 --> FontPoint8String
-  FontPoint12 --> FontPoint12String
-  FontPoint16 --> FontPoint16String
-  %% Styles
-  classDef FontPoint8 stroke:#ffffff,stroke-width:2px,fill:#000000,color:#ffffff,font-size:8pt
-  class FontPoint8 FontPoint8
-  classDef FontPoint12 stroke:#ffffff,stroke-width:2px,fill:#000000,color:#ffffff,font-size:12pt
-  class FontPoint12 FontPoint12
-  classDef FontPoint16 stroke:#ffffff,stroke-width:2px,fill:#000000,color:#ffffff,font-size:16pt
-  class FontPoint16 FontPoint16
+```text
+  classDef B0_ stroke:#FFFFFF,stroke-width:3px,fill:#000000,color:#FFFFFF
+  classDef B1_ stroke:#CD6155,stroke-width:3px,fill:#000000,color:#CD6155
+  classDef B2_ stroke:#af7ac5,stroke-width:3px,fill:#000000,color:#af7ac5
+  classDef B3_ stroke:#5499c7,stroke-width:3px,fill:#000000,color:#5499c7
+  classDef B4_ stroke:#52be80,stroke-width:3px,fill:#000000,color:#52be80
+  classDef B5_ stroke:#d4ac0d,stroke-width:3px,fill:#000000,color:#d4ac0d
+  classDef B6_ stroke:#ca6f1e,stroke-width:3px,fill:#000000,color:#ca6f1e 
+  classDef B7_ stroke:#7b7d7d,stroke-width:3px,fill:#000000,color:#7b7d7d
+  classDef B8_ stroke:#626567,stroke-width:3px,fill:#000000,color:#626567 
+  classDef B9_ stroke:#000000,stroke-width:3px,fill:#000000,color:#FFFFFF
 ```
