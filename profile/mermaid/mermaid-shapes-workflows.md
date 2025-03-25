@@ -67,6 +67,8 @@ flowchart TB
         ManualOperation@{shape: trap-t, label: "Manual\nOperation\n[trap-t]"}
         PrepareConditional@{shape: hex, label: "Preparation\nconditional/step\n[hex]"}
         %% Layout : none
+        Decision -- Yes --> ManualOperation
+        Decision -- No --> PrepareConditional
         %% Styles : global
     end
 

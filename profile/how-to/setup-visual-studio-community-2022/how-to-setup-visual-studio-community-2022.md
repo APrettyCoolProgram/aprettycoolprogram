@@ -1,8 +1,8 @@
 <!--
-    Last updated: 241231
+    Last updated: 250317
 -->
 
-> **This document was last updated** December 31, 2024  
+> **This document was last updated** March 17, 2025 
 
 <div align="center">
 
@@ -19,7 +19,7 @@ CONTENTS
 [Installing Visual Studio 2022 extensions]()  
 [Setting up Visual Studio 2022]()  
 
-This document will walk through the steps I take to setup my Visual Studio 2022 environment for developing web services in C#.
+This document will walk through the steps I take to setup my Visual Studio 2022 (v17.13.3) environment for C# development.
 
 # Installing Visual Studio 2022
 
@@ -33,7 +33,6 @@ For example, I've installed the following workflows for developing web services 
 
 * ASP.NET and web development
 * Azure Development
-* .NET Multi-platform APP UI development
 * .NET desktop development
 
 The workflows you specify will take care of the other components of the installation process.
@@ -83,14 +82,19 @@ Microsoft has an extension pack that contains a bunch of individual extensions t
 
 And a few other useful extensions:
 
-* [Better Comments](https://marketplace.visualstudio.com/items?itemName=OmarRwemi.BetterCommentsVS2022)
 * [Collapse Comments](https://marketplace.visualstudio.com/items?itemName=MattLaceyLtd.CollapseComments)
+* [Copy Folder Tree](https://marketplace.visualstudio.com/items?itemName=iyulab.CopyFolderTree)
+* [Doc Preview](https://marketplace.visualstudio.com/items?itemName=OlegShilo.DocPreview)
 * [Editor Guidelines](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelinesPreview)
+* [JSON Pretty](https://marketplace.visualstudio.com/items?itemName=Hemax2000.JsonPretty)
 * [Roslynator 2022](https://marketplace.visualstudio.com/items?itemName=josefpihrt.Roslynator2022)
+* [Solution Mapper](https://marketplace.visualstudio.com/items?itemName=TJGokken.solmap2025)
 * [Viasfora](https://marketplace.visualstudio.com/items?itemName=TomasRestrepo.Viasfora)
 * [Visual Studio Spell Checker (VS2022 and Later)](https://marketplace.visualstudio.com/items?itemName=EWoodruff.VisualStudioSpellCheckerVS2022andLater)
 * [VSColorOutput64](https://marketplace.visualstudio.com/items?itemName=MikeWard-AnnArbor.VSColorOutput64)
 * [XAML Styler for Visual Studio 2022](https://marketplace.visualstudio.com/items?itemName=TeamXavalon.XAMLStyler2022)
+
+I also use [Claudia IDE](https://marketplace.visualstudio.com/items?itemName=kbuchi.ClaudiaIDE) so I can put an image of The Dude in the background to help me abide.
 
 ## Themes
 
@@ -126,116 +130,83 @@ Things to remember about this list:
 
 ## Visual Studio specific
 
-* Environment
-  * [**General**](./screenshots/settings-environment-general-01.png)
-  * **Clean Solution** ([details](#clean-solution))
-  * [**Documents**](./screenshots/settings-environment-documents-01.png)
-  * **Fonts and Colors** ([details](#fonts-and-colors))
-  * [**Tabs and Windows**](./screenshots/settings-environment-tabs-and-windows-01.png)
-  * [**Trailing Whitespace**](./screenshots/settings-environment-trailing-whitespace-01.png)
-  * [**Task List**](./screenshots/settings-environment-task-list-01.png)
-  * **Tweaks 2022** ([details](#tweaks-2022))
-  * [**General**](./screenshots/settings-projects-and-solutions-general-01.png)
-  * [**Build and Run**](./screenshots/settings-projects-and-solutions-build-and-run-01.png)
-* Text Editor
-  * [**General**](./screenshots/settings-text-editor-general-01.png)
-  * [**Advanced**](./screenshots/settings-text-editor-advanced-01.png)
-  * **Code Cleanup** ([details](#code-cleanup))
-  * All Languages
-    * [**General**](./screenshots/settings-text-editor-all-languages-general-01.png)
-    * [**Scroll Bars**](./screenshots/settings-text-editor-all-languages-scroll-bars-01.png)
-    * [**Tabs**](./screenshots/settings-text-editor-all-languages-tabs-01.png)
-  * C#
-    * **Advanced** [1](./screenshots/settings-text-editor-csharp-advanced-01.png) | [2](./screenshots/settings-text-editor-csharp-advanced-02.png)
-    * **Code Style** ([details](#code-style))
-    * [**Intellisense**](./screenshots/settings-text-editor-csharp-intellisense-01.png)
-  * JSON
-  * Markdown
-  * Plain Text
-  * XAML
-    * Formatting
-      * [**General**](./screenshots/settings-text-editor-xaml-formatting-general-01.png)
-      * [**Spacing**](./screenshots/settings-text-editor-xaml-formatting-spacing-01.png)
-    * [**Miscellaneous**](./screenshots/settings-text-editor-xaml-miscellaneous-01.png)
-  * GitHub
-    * [CoPilot](#github-copilot)
+### Environment
 
-## Details
+  * **General** - [screenshot](./screenshots/settings-environment-general-01.png)
 
-### Fonts and Colors
+  * **Documents** - [screenshot](./screenshots/settings-environment-documents-01.png)
 
-Modification will be made to these settings after using the current setup for a while.
+  * **Tabs and Windows** - [screenshot](./screenshots/settings-environment-tabs-and-windows-01.png)
 
-### Code Cleanup
+  * **Trailing Whitespace** - [screenshot](./screenshots/settings-environment-trailing-whitespace-01.png)
 
-* [Profile 1](./screenshots/code-cleanup-profile-1-01.png)
-* [Profile 2](./screenshots/code-cleanup-profile-2-01.png)
+  * **Task List** - [screenshot](./screenshots/settings-environment-task-list-01.png)
 
-#### Profile 2
+### Projects and Solutions
 
-### Code Style
+  * **General** - [screenshot](./screenshots/settings-projects-and-solutions-general-01.png)
+
+  * **Build and Run** - [screenshot](./screenshots/settings-projects-and-solutions-build-and-run-01.png)
+
+### Text Editor
+
+  * **General** - [screenshot](./screenshots/settings-text-editor-general-01.png)
+
+  * **Advanced** - [screenshot](./screenshots/settings-text-editor-advanced-01.png)
+
+  * **Code Cleanup**  
+
+    * [Profile 1](./screenshots/code-cleanup-profile-1-01.png)
+    * [Profile 2](./screenshots/code-cleanup-profile-2-01.png)
+
+#### All Languages
+
+  * **General** - [screenshot](./screenshots/settings-text-editor-all-languages-general-01.png)
+
+  * **Scroll Bars** - [screenshot](./screenshots/settings-text-editor-all-languages-scroll-bars-01.png)
+
+  * **Tabs** - [screenshot](./screenshots/settings-text-editor-all-languages-tabs-01.png)
 
 #### C#
 
-Most of the settings in Code Style can have one of the following Severities:
+  * **Advanced** - [screenshot 1](./screenshots/settings-text-editor-csharp-advanced-01.png) | [screenshot 2](./screenshots/settings-text-editor-csharp-advanced-02.png)
+  
+##### Code Style  
 
-| Severity | Description |
-| -------- | ----------- |
-| `Error` | Violations appear as build errors and cause builds to fail. |
-| `Refactoring Only` | Violations aren't visible to the user.|
-| `Suggestion` | Violations appear as build messages and as suggestions in the Visual Studio IDE. |
-| `Warning` |  Violations appear as build warnings but do not cause builds to fail. |
+  Most of the settings in Code Style can have one of the following Severities:
 
-* **General** [1](./screenshots/settings-text-editor-csharp-code-style-general-01.png) | [2](./screenshots/settings-text-editor-csharp-code-style-general-02.png)
+  | Severity | Description |
+  | -------- | ----------- |
+  | `Error` | Violations appear as build errors and cause builds to fail. |
+  | `Refactoring Only` | Violations aren't visible to the user.|
+  | `Suggestion` | Violations appear as build messages and as suggestions in the Visual Studio IDE. |
+  | `Warning` |  Violations appear as build warnings but do not cause builds to fail. |
 
-* Formatting
-  * [**Indentation**](settings-text-editor-csharp-code-style-formatting-indentation-01.png)
-  * [**New Lines**](settings-text-editor-csharp-code-style-formatting-new-lines-01.png)
-  * [**Spacing**](settings-text-editor-csharp-code-style-formatting-spacing-01.png)
-  * [**Wrapping**](settings-text-editor-csharp-code-style-formatting-wrapping-01.png)
-* [**Naming**](settings-text-editor-csharp-code-style-naming-01.png)
-* [**Intellisense**](settings-text-editor-csharp-code-style-intellisense-01.png)
+  * **General** - [screenshot 1](./screenshots/settings-text-editor-csharp-code-style-general-01.png) | [screenshot 2](./screenshots/settings-text-editor-csharp-code-style-general-02.png)
 
-### GitHub CoPilot
+  * **Formatting - Indentation** - [screenshot](settings-text-editor-csharp-code-style-formatting-indentation-01.png)
+  * **Formatting - New Lines** - [screenshot](settings-text-editor-csharp-code-style-formatting-new-lines-01.png)
+  * **Formatting - Spacing** - [screenshot](settings-text-editor-csharp-code-style-formatting-spacing-01.png)
+  * **Formatting - Wrapping** - [screenshot](settings-text-editor-csharp-code-style-formatting-wrapping-01.png)
+  * **Naming** - [screenshot](settings-text-editor-csharp-code-style-naming-01.png)
+  * **Intellisense** - [screenshot](settings-text-editor-csharp-code-style-intellisense-01.png)
 
-Modification will be made to these settings after using the current setup for a while.
+#### Intellisense
 
-## Extension specific
+  * **Intellisense** - [screenshot](./screenshots/settings-text-editor-csharp-intellisense-01.png)
 
-### Better Comments
+#### XAML
 
-I'm not currently using this extension, so no setting modifications yet.
+  * **General** - [screenshot](./screenshots/settings-text-editor-xaml-formatting-general-01.png)
+  * **Spacing** - [screenshot](./screenshots/settings-text-editor-xaml-formatting-spacing-01.png)
+  * **Miscellaneous** - [screenshot](./screenshots/settings-text-editor-xaml-miscellaneous-01.png)
 
-### Clean Solution
+#### GitHub
 
-No setting changes.
-
-### Collapse Comments
-
-No setting changes.
+  * [CoPilot](#github-copilot)
 
 ### Editor Guidelines
 
 1. Go to `Tools > Options > Environment > Fonts and Colors`
 2. Choose `Guideline` from the *Display Items* list
 3. Pick a color you like!
-
-### Productivity Power Tools
-
-No setting changes.
-
-### Tweaks 2022
-
-No setting changes.
-
-### Viasfora
-
-No setting changes.
-
-### VSColorOutput64
-
-No setting changes.
-
-### XAML Styler
-
-No setting changes.
