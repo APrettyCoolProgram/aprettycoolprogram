@@ -1,6 +1,6 @@
 ; ==============================================================================
 ; This AutoHotKey script file is A Pretty Cool Program projects.
-; u240715.
+; u250214.
 ; ==============================================================================
 
 ;-------------------------------------------------------------------------------
@@ -26,10 +26,10 @@
 ; ALT+CTRL+SHIFT+C
 ; TBD
 ; Ex. TBD
-^+!c::
-{
-	send "// <summary>TBD</summary>"
-}
+;^+!c::
+;{
+;	// TBD
+;}
 
 ; ALT+CTRL+SHIFT+D
 ; Inserts the date in yyMMdd format.
@@ -64,14 +64,14 @@
 }
 
 ; ALT+CTRL+SHIFT+H
-; TBD
-; Ex. TBD
+; C# class file header
+; Ex. "// u250214_code`n// u250214_documentation"
 ^+!h::
 {
-	headerPlaceholder := "// uXXXXXX.XXXX_code"
-	.  "`n// uXXXXXX.XXXX_documentation"
+	headerText := "// u" FormatTime(A_Now, "yyMMdd") "_code`n"
+	.  "// u" FormatTime(A_Now, "yyMMdd") "_documentation"
 
-	send headerPlaceholder
+	send headerText
 }
 
 ; ALT+CTRL+SHIFT+I
@@ -148,13 +148,12 @@
 ;}
 
 ; ALT+CTRL+SHIFT+R
-; TBD
-; Ex. TBD
-;^+!r::
-;{
-;	// TBD
-;}
-
+; Inserts release candidate information.
+; Ex. "Major.Minor.Patch-rc.01+230204.1201"
+^+!r::
+{
+	send "Major.Minor.Patch-rc{+}" FormatTime(A_Now, "yyMMdd.HHmm")
+}
 ; ALT+CTRL+SHIFT+S
 ; TBD
 ; Ex. TBD
@@ -180,13 +179,12 @@
 ;}
 
 ; ALT+CTRL+SHIFT+V
-; TBD
-; Ex. TBD
+; Inserts development information.
+; Ex. "Major.Minor.Patch-development+230204.1201"
 ^+!v::
 {
-	send "Development b" FormatTime(A_Now, "yyMMdd.HHmm")
+	send "Major.Minor.Patch-development{+}" FormatTime(A_Now, "yyMMdd.HHmm")
 }
-
 ; ALT+CTRL+SHIFT+W
 ; TBD
 ; Ex. TBD
