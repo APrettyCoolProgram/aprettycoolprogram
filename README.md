@@ -15,6 +15,9 @@
   * [File headers](./profile/development-guidelines/file-headers.md)
   * [XML documentation](./profile/development-guidelines/xml-documentation.md)
 
+* Other
+  * [Mermaid](./profile/mermaid/mermaid.md)
+
 ### How-To
 
 * [Setup a Visual Studio 2022 environment](./profile/how-to/visual-studio-community-2022-setup/visual-studio-community-2022-setup.md)
