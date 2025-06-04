@@ -1,7 +1,7 @@
 ; ##############################################################################
 ; AutoHotKey script for A Pretty Cool Program projects.
 ; https://github.com/APrettyCoolProgram
-; u250513
+; u250604
 ; ##############################################################################
 
 #SingleInstance Force
@@ -73,13 +73,15 @@
 ; ---------- ALT+CTRL+SHIFT+H ----------
 ; ALT+CTRL+SHIFT+H
 ; Inserts a simple C# file header with date/timestamps for code/documentation.
-; Example: // u250513_code
-; 		// u250513_documentation
+; Example: /* u250513_code
+; 		    * u250513_documentation
+;           */
 ; --------------------------------------
 ^+!h::
 {
-	headerText := "// u" FormatTime(A_Now, "yyMMdd") "_code`n"
-	           .  "// u" FormatTime(A_Now, "yyMMdd") "_documentation"
+	headerText := "/* u" FormatTime(A_Now, "yyMMdd") "_code`n"
+	           .  " * u" FormatTime(A_Now, "yyMMdd") "_documentation`n"
+			   .  " */
 
 	send headerText
 }
@@ -229,7 +231,7 @@
 ; --------------------------------------
 ^+!y::
 {
-	send "25.5.0"
+	send "25.6.0"
 }
 
 ; ---------- ALT+CTRL+SHIFT+z ----------
