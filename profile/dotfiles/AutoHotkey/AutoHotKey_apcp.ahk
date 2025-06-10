@@ -1,7 +1,7 @@
 ; ##############################################################################
 ; AutoHotKey script for A Pretty Cool Program projects.
 ; https://github.com/APrettyCoolProgram
-; u250604
+; u250610
 ; ##############################################################################
 
 #SingleInstance Force
@@ -81,7 +81,7 @@
 {
 	headerText := "/* u" FormatTime(A_Now, "yyMMdd") "_code`n"
 	           .  " * u" FormatTime(A_Now, "yyMMdd") "_documentation`n"
-			   .  " */
+			   .  " */"
 
 	send headerText
 }
