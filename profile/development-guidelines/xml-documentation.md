@@ -25,9 +25,30 @@ XML documentation guidelines
 
 Projects should use both ***source code*** and ***external*** XML documentation.
 
-***Source code XML documentation*** should provide all *required* information about a component.
+## Source code XML documentation
 
-***External XML documentation*** should provide *non-essential but helpful* detailed information, examples, and other resources for a component.
+Source code XML documentation should provide all *required* information about a component.
+
+The following XML documentation tags should **always** be in the source code, since they are helpful when viewing the source code.
+
+- `<summary>`
+- `<param>`
+- `<returns>`
+- `<value>`
+- `<see>`
+- `<seealso>`
+
+The `<remarks>` tag **can be** in the source code, as long as they follow the [source code documentation structure](#source-code-documentation-structure):
+
+## External XML documentation
+
+External XML documentation should provide *non-essential but helpful* detailed information, examples, and other resources for a component.
+
+The following XML documentation tags are *generally* stored in external files, in order to keep the source code cleaner/more readable:
+
+- `<code>`
+- `<example>`
+- `<exception>`
 
 ## What should be documented<!-- omit in toc -->
 
@@ -35,27 +56,55 @@ The following source code components should be commented:
 
 ## Classes
 
-Source code classes should look like this:
-
 ```csharp
 /// <summary>What the class does.</summary>
+/// <remarks>
+///     Important information, or additional details, about this class.
+/// </remarks>
+```
+
+You should point to existing documentation, if it exists:
+
+```csharp
+/// <seealso href= "https://github.com/spectrum-health-systems/Tingen-Documentation">Tingen documentation</seealso>
+```
+
+If there is an external XML documentation file:
+
+```csharp
 /// <include file='XmlDoc/%Namespace%.%ClassName%_doc.xml' path='%Namespace%/Type[@name=Class]/%ClassName%/*'/>
+```
 
 ### Class properties
 
-Source code properties should look like this:
+```csharp
+/// <summary>What the property is for.</summary>
+/// <remarks>
+///     Important information, or additional details, about this property.
+/// </remarks>
+/// <value> The default value of the property <value>
+```
+
+If there is an external XML documentation file:
 
 ```csharp
-/// <summary>What the property is.</summary>
 /// <include file='XmlDoc/%Namespace%.%ClassName%_doc.xml' path='%Namespace%/Property[@name="Property"]/%PropertyName%/*'/>
 ```
 
 ### Class methods
 
-Source code methods should look like this:
+```csharp
+/// <summary>What the method does.</summary>
+/// <remarks>
+///     Important information, or additional details, about this method.
+/// </remarks>
+/// <param name="parameter">If the method has parameters.</param>
+/// <returns>If the method returns something.</returns>
+```
+
+Any examples or extensive remarks should be placed in an external file:
 
 ```csharp
-/// <summary>What the property is.</summary>
 /// <include file='XmlDoc/%Namespace%.%ClassName%_doc.xml' path='%Namespace%/Method[@name="Method"]/%MethodName%/*'/>
 ```
 
@@ -156,7 +205,6 @@ Method documentation:
 Also:
 * Class descriptions should contain any external sources, such as documentation, etc.
 
-
 ## Common stuff
 
 Common stuff should be documented in an external file named XmlDoc/%Namespace%-Common_doc.xml`
@@ -186,7 +234,6 @@ The documentation should look like this:
  </Type>
 ```
 
-
 ## XML documentation standards
 
 In addition to [Microsoft's XML documentation standards](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/xmldoc/):
@@ -213,19 +260,6 @@ Each file should contain an HTML comment at the top of the file indicating the l
 -->
 ```
 
-# Source code XML documentation
-
-The following XML documentation tags should **always** be in the ***source code***, since they are helpful when viewing the source code.
-
-- `<summary>`
-- `<param>`
-- `<returns>`
-- `<value>`
-
-The following XML documentation tags **can be** in the source code, as long as they follow the [source code documentation structure](#source-code-documentation-structure):
-
-- `<remarks>`
-
 ## Source code documentation structure<!-- omit in toc -->
 
 Source code XML documentation should follow these guidelines:
@@ -244,13 +278,7 @@ Source code XML documentation should follow these guidelines:
 
 # External XML documentation
 
-The following XML documentation tags are stored in external files, in order to keep the source code cleaner/more readable:
 
-- `<code>`
-- `<example>`
-- `<exception>`
-- `<see>`
-- `<seealso>`
 
 If a `<remarks>` entry is longer than a single line, it should contained in an external file, not the source code.
 
@@ -521,7 +549,6 @@ Example:
 ```csharp
 /// <value>Default value is <c>false</c></value>
 ```
-
 
 <!-- 
 
