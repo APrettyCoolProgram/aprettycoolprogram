@@ -81,7 +81,7 @@
 {
 	headerText := "/* u" FormatTime(A_Now, "yyMMdd") "_code`n"
 	           .  " * u" FormatTime(A_Now, "yyMMdd") "_documentation`n"
-			   .  " */"
+	           .  " */"
 
 	send headerText
 }
@@ -127,12 +127,13 @@
 ;}
 
 ; ---------- ALT+CTRL+SHIFT+N ----------
-; Not used.
-; Example:
+; Inserts a version number
+; Example: "v0.0.0"
 ; --------------------------------------
-;^+!n::
-;{
-;}
+^+!n::
+{
+	send "v0.0.0"
+}
 
 ; ---------- ALT+CTRL+SHIFT+O ----------
 ; Not used.
