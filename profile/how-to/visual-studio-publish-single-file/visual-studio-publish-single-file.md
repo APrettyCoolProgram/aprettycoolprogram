@@ -30,7 +30,6 @@ Console projects should look like this:
     <DebugType>embedded</DebugType>
     <Version>1.0.0</Version>
     <FileVersion>1.0.0</FileVersion>
-    <IncludeAllContentForSelfExtract>true</IncludeAllContentForSelfExtract>
 </PropertyGroup>
 ```
 
