@@ -11,7 +11,7 @@ flowchart TB
         Start@{shape: circle, label: "Start the workflow\n[circle]"}
         TerminalStart@{shape: stadium, label: "Start the workflow\n[stadium]"}
         StartSmall@{shape: sm-circ, label: "Start the workflow\n[sm-circ]"}
-        Comment@{shape: brace, label: "[sm-circ]"}
+        Comment@{shape: brace, label: "[sm-cifrc]"}
         %% Layout : none
         %% Styles : global
     end
