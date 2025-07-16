@@ -53,9 +53,9 @@ flowchart TB
     subgraph InputOutputWorkflow ["Input/Output"]
         direction LR
         %% Components
-        DataInputOutputRight@{shape: lean-r, label: "Input or\noutput\n[lean-r]"}
-        DataInputOutputLeft@{shape: lean-l, label: "Input or\noutput\n[lean-l]"}
-        ManualInput@{shape: sl-rect, label: "Manual input\n[sl-rect]"}
+        DataInputOutputRight@{shape: lean-r, label: "Input\n[lean-r]"}
+        DataInputOutputLeft@{shape: lean-l, label: "Output\n[lean-l]"}
+        ManualInput@{shape: sl-rect, label: "Manual\ninput/output\n[sl-rect]"}
         %% Layout : none
         %% Styles : global
     end
