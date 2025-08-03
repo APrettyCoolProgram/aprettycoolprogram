@@ -1,4 +1,4 @@
-# What's here
+# A Pretty Cool Program
 
 ## Development guidelines
 
@@ -19,10 +19,10 @@
 * Other
   * [Mermaid](./profile/mermaid/mermaid.md)
 
-### How-To
+## How-To
 
-####
+### Visual Studio 2022
 
 * [Setup a Visual Studio 2022 environment](./profile/how-to/visual-studio-community-2022-setup/visual-studio-community-2022-setup.md)
-* Setup Visual Studio 2022 Sandcastle Help File Builder integration 
-* [Publish a Visual Studio 2022 solution as a single file](./profile/how-to/visual-studio-publish-single-file/visual-studio-publish-single-file.md)
+* [Sandcastle Help File Builder integration]() 
+* [Publishing as a single file](./profile/how-to/visual-studio-publish-single-file/visual-studio-publish-single-file.md)
