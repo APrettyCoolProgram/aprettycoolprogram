@@ -132,44 +132,44 @@ Things to remember about this list:
 
 ### Environment
 
-  * **General** - [screenshot](./screenshots/settings-environment-general-01.png)
+  * **General** - [screenshot](settings-environment-general-01.png)
 
-  * **Documents** - [screenshot](./screenshots/settings-environment-documents-01.png)
+  * **Documents** - [screenshot](settings-environment-documents-01.png)
 
-  * **Tabs and Windows** - [screenshot](./screenshots/settings-environment-tabs-and-windows-01.png)
+  * **Tabs and Windows** - [screenshot](settings-environment-tabs-and-windows-01.png)
 
-  * **Trailing Whitespace** - [screenshot](./screenshots/settings-environment-trailing-whitespace-01.png)
+  * **Trailing Whitespace** - [screenshot](settings-environment-trailing-whitespace-01.png)
 
-  * **Task List** - [screenshot](./screenshots/settings-environment-task-list-01.png)
+  * **Task List** - [screenshot](settings-environment-task-list-01.png)
 
 ### Projects and Solutions
 
-  * **General** - [screenshot](./screenshots/settings-projects-and-solutions-general-01.png)
+  * **General** - [screenshot](settings-projects-and-solutions-general-01.png)
 
-  * **Build and Run** - [screenshot](./screenshots/settings-projects-and-solutions-build-and-run-01.png)
+  * **Build and Run** - [screenshot](settings-projects-and-solutions-build-and-run-01.png)
 
 ### Text Editor
 
-  * **General** - [screenshot](./screenshots/settings-text-editor-general-01.png)
+  * **General** - [screenshot](settings-text-editor-general-01.png)
 
-  * **Advanced** - [screenshot](./screenshots/settings-text-editor-advanced-01.png)
+  * **Advanced** - [screenshot](settings-text-editor-advanced-01.png)
 
   * **Code Cleanup**  
 
-    * [Profile 1](./screenshots/code-cleanup-profile-1-01.png)
-    * [Profile 2](./screenshots/code-cleanup-profile-2-01.png)
+    * [Profile 1](code-cleanup-profile-1-01.png)
+    * [Profile 2](code-cleanup-profile-2-01.png)
 
 #### All Languages
 
-  * **General** - [screenshot](./screenshots/settings-text-editor-all-languages-general-01.png)
+  * **General** - [screenshot](settings-text-editor-all-languages-general-01.png)
 
-  * **Scroll Bars** - [screenshot](./screenshots/settings-text-editor-all-languages-scroll-bars-01.png)
+  * **Scroll Bars** - [screenshot](settings-text-editor-all-languages-scroll-bars-01.png)
 
-  * **Tabs** - [screenshot](./screenshots/settings-text-editor-all-languages-tabs-01.png)
+  * **Tabs** - [screenshot](settings-text-editor-all-languages-tabs-01.png)
 
 #### C#
 
-  * **Advanced** - [screenshot 1](./screenshots/settings-text-editor-csharp-advanced-01.png) | [screenshot 2](./screenshots/settings-text-editor-csharp-advanced-02.png)
+  * **Advanced** - [screenshot 1](settings-text-editor-csharp-advanced-01.png) | [screenshot 2](settings-text-editor-csharp-advanced-02.png)
   
 ##### Code Style  
 
@@ -182,7 +182,7 @@ Things to remember about this list:
   | `Suggestion` | Violations appear as build messages and as suggestions in the Visual Studio IDE. |
   | `Warning` |  Violations appear as build warnings but do not cause builds to fail. |
 
-  * **General** - [screenshot 1](./screenshots/settings-text-editor-csharp-code-style-general-01.png) | [screenshot 2](./screenshots/settings-text-editor-csharp-code-style-general-02.png)
+  * **General** - [screenshot 1](settings-text-editor-csharp-code-style-general-01.png) | [screenshot 2](settings-text-editor-csharp-code-style-general-02.png)
 
   * **Formatting - Indentation** - [screenshot](settings-text-editor-csharp-code-style-formatting-indentation-01.png)
   * **Formatting - New Lines** - [screenshot](settings-text-editor-csharp-code-style-formatting-new-lines-01.png)
@@ -193,13 +193,13 @@ Things to remember about this list:
 
 #### Intellisense
 
-  * **Intellisense** - [screenshot](./screenshots/settings-text-editor-csharp-intellisense-01.png)
+  * **Intellisense** - [screenshot](settings-text-editor-csharp-intellisense-01.png)
 
 #### XAML
 
-  * **General** - [screenshot](./screenshots/settings-text-editor-xaml-formatting-general-01.png)
-  * **Spacing** - [screenshot](./screenshots/settings-text-editor-xaml-formatting-spacing-01.png)
-  * **Miscellaneous** - [screenshot](./screenshots/settings-text-editor-xaml-miscellaneous-01.png)
+  * **General** - [screenshot](settings-text-editor-xaml-formatting-general-01.png)
+  * **Spacing** - [screenshot](settings-text-editor-xaml-formatting-spacing-01.png)
+  * **Miscellaneous** - [screenshot](settings-text-editor-xaml-miscellaneous-01.png)
 
 #### GitHub
 

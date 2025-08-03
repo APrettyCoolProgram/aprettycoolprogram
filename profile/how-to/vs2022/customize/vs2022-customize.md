@@ -55,28 +55,28 @@ Notes:
 
 * The "Color Theme" cannot be changed to "Dracula Theme" untilthe Dracula Theme has been installed.
 
-![](./_attachments/tools-options-environment-general-01.png)
+![](tools-options-environment-general-01.png)
 
 ### Environment > Documents
 
-![](./_attachments/tools-options-environment-documents-01.png)
+![](tools-options-environment-documents-01.png)
 
 ### Environment > Fonts and Colors
 
-![](./_attachments/tools-options-environment-fonts-and-colors-01.png)
+![](tools-options-environment-fonts-and-colors-01.png)
 
 ### Environment > Preview Settings
 
-![](./_attachments/tools-options-environment-preview-settings-01.png)
+![](tools-options-environment-preview-settings-01.png)
 
 ### Environment > Tabs and Windows
 
-![](./_attachments/tools-options-environment-tabs-and-windows-01.png)
+![](tools-options-environment-tabs-and-windows-01.png)
 
 ### Environment > Task List
 
-![](./_attachments/tools-options-environment-task-list-01.png)
+![](tools-options-environment-task-list-01.png)
 
 ### Text Editor > General
 
-![](./_attachments/tools-options-text-editor-general-01.png)
+![](tools-options-text-editor-general-01.png)
