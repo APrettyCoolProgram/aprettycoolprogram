@@ -1,7 +1,5 @@
 # Development guidelines
 
-* Documentation
-  * [XML documentation](./profile/development-guidelines/xml-documentation.md)
 * Repositories  
   * [.gitignore](./profile/dotfiles/repositories/.gitignore)
 * Source Code
@@ -11,5 +9,3 @@
   * [Methods](./profile/development-guidelines/methods.md)
   * [Syntax and formatting](./profile/development-guidelines/syntax-and-formatting.md)
   * [Versioning](./profile/development-guidelines/versioning.md)
-* Other
-  * [Mermaid](./profile/mermaid/mermaid.md)
