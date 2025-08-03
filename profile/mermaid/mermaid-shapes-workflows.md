@@ -11,7 +11,7 @@ flowchart TB
         Start@{shape: circle, label: "Start the workflow\n[circle]"}
         TerminalStart@{shape: stadium, label: "Start the workflow\n[stadium]"}
         StartSmall@{shape: sm-circ, label: "Start the workflow\n[sm-circ]"}
-        Comment@{shape: brace, label: "[sm-circ]"}
+        StartComment@{shape: brace, label: "[sm-circ]"}
         %% Layout : none
         %% Styles : global
     end
@@ -53,9 +53,9 @@ flowchart TB
     subgraph InputOutputWorkflow ["Input/Output"]
         direction LR
         %% Components
-        DataInputOutputRight@{shape: lean-r, label: "Input or\noutput\n[lean-r]"}
-        DataInputOutputLeft@{shape: lean-l, label: "Input or\noutput\n[lean-l]"}
-        ManualInput@{shape: sl-rect, label: "Manual input\n[sl-rect]"}
+        DataInputOutputRight@{shape: lean-r, label: "Input\n[lean-r]"}
+        DataInputOutputLeft@{shape: lean-l, label: "Output\n[lean-l]"}
+        ManualInput@{shape: sl-rect, label: "Manual\ninput/output\n[sl-rect]"}
         %% Layout : none
         %% Styles : global
     end
@@ -78,7 +78,7 @@ flowchart TB
         Stop@{shape: circle, label: "Stop the workflow\n[circle]"}
         TerminalStop@{shape: stadium, label: "Stop the workflow\n[stadium]"}
         StopSmall@{shape: fr-circ, label: "Stop the workflow\n[fr-circ]"}
-        Comment@{shape: brace, label: "[fr-circ]"}
+        StopComment@{shape: brace, label: "[fr-circ]"}
         %% Layout : none
         %% Styles : global
     end
