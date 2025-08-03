@@ -1,10 +1,10 @@
 > Last updated August 3, 2025
 
-# APCP > Guidelines > Source Code > File Headers
+# APCP > Guidelines > Projects > ProjectInfo
 
-# ProjectInfo files
+Each project should have a `ProjectInfo` file containing information about the project.
 
-Every project should have a [`ProjectInfo`](../project/project-info.md) file with the following header:
+For example, a C# project would have a `ProjectInfo.cs` file with the following content:
 
 ```csharp
 /* %ProjectName%
@@ -15,6 +15,13 @@ Every project should have a [`ProjectInfo`](../project/project-info.md) file wit
  * Copyright (c) %CopyrightHolder%. All rights reserved.
  * Licensed under the %LicenseName% license.
  */
+
+namespace %Namespace%;
+
+internal class %ClassName%
+{
+    // This class is only used for informational purposes.
+}
 ```
 
 For example:
@@ -28,24 +35,11 @@ For example:
  * Copyright (c) A Pretty Cool Program. All rights reserved.
  * Licensed under the Apache 2.0 license.
  */
-```
 
-# Csharp
+namespace dvn;
 
-All `.cs` files should have a file header comment.
-
-```csharp
-/* %Namespace%.%ClassName%.cs
- * uYYMMDD_code
- * uYYMMDD_documentation
- */
-```
-
-For example:
-
-```csharp
-/* dvn.App.CommandLine.cs
- * u250801_code
- * u250801_documentation
- */
+internal class ProjectInfo
+{
+    // This class is only used for informational purposes.
+}
 ```

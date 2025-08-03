@@ -1,10 +1,8 @@
 # A Pretty Cool Program
 
-## What's here
-
 ### Guidelines
 
-* [Development](/profile/guideline/development/README.md)
+<!-- * [Development](/profile/guideline/development/README.md) -->
 * [Documentation](/profile/guideline/documentation/README.md)
 * [Projects](/profile/guideline/project/README.md)
 * [Repositories](/profile/guideline/repository/README.md)
