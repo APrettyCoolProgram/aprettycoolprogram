@@ -1,8 +1,6 @@
-# A Pretty Cool Program
+# What's here
 
-## What's here
-
-### Development guidelines
+## Development guidelines
 
 * Comments
   * [Comments](./profile/development-guidelines/comments.md)
@@ -23,6 +21,8 @@
 
 ### How-To
 
+####
+
 * [Setup a Visual Studio 2022 environment](./profile/how-to/visual-studio-community-2022-setup/visual-studio-community-2022-setup.md)
-* Setup a Visual Studio Code environment
+* Setup Visual Studio 2022 Sandcastle Help File Builder integration 
 * [Publish a Visual Studio 2022 solution as a single file](./profile/how-to/visual-studio-publish-single-file/visual-studio-publish-single-file.md)
