@@ -1,37 +1,8 @@
-# Source code comment guidelines
+> Last updated August 3, 2025
 
-- [Standard comments](#standard-source-code-comments)
-- [XML documentation](#xml-documentation-guidelines)
+XML documentation guidelines
 
-# Standard source code comments
-
-## Development comments
-
-```text
-// Development comments contain important information that should not be removed
-// from the source code, and have a maximum width of 80 characters.
-```
-
-## Narrative comments
-
-```text
-/* Narrative comments are enclosed with provide provide additional information or 
- * narrative about a block of code.
- */
-```
-
-## Prefixes
-
-Comments may have the following prefixes:
-
-- `DEVNOTE` is a call-out comment specific to a block of code
-- `DEPRECIATED` indicates that code has been depreciated, but not yet removed
-- `REVIEW` indicates that code should be reviewed and/or refactor
-- `TODO` indicates that there is something to be done.
-
-# XML documentation guidelines
-
-
+- [XML documentation guidelines](#xml-documentation-guidelines)
   - [Classes](#classes)
     - [Class methods](#class-methods)
   - [Example of external Class XML Documentation](#example-of-external-class-xml-documentation)
@@ -52,6 +23,7 @@ Comments may have the following prefixes:
   - [\<value\> tag](#value-tag)
 - [Complete XML documentation example](#complete-xml-documentation-example)
 
+# XML documentation guidelines
 
 Projects should use both ***source code*** and ***external*** XML documentation.
 

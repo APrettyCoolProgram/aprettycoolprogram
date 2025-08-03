@@ -1,21 +1,15 @@
+> Last updated August 3, 2025
+
 # Sourcecode comment guidelines
 
 ## Development comments
 
-```text
+```csharp
 // Development comments contain important information that should not be removed
 // from the source code, and have a maximum width of 80 characters.
 ```
 
-## Narrative comments
-
-```text
-/* Narrative comments are enclosed with provide provide additional information or 
- * narrative about a block of code.
- */
-```
-
-## Prefixes
+### Prefixes
 
 Comments may have the following prefixes:
 
@@ -23,3 +17,19 @@ Comments may have the following prefixes:
 - `DEPRECIATED` indicates that code has been depreciated, but not yet removed
 - `REVIEW` indicates that code should be reviewed and/or refactor
 - `TODO` indicates that there is something to be done.
+
+Examples:
+
+```csharp
+// TODO Do this thing
+// DEVNOTE If this is changed, things break!
+```
+
+## Narrative comments
+
+```csharp
+/* Narrative comments are enclosed with provide provide additional information or 
+ * narrative about a block of code.
+ */
+```
+
