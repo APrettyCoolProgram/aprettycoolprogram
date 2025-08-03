@@ -1,23 +1,11 @@
 # A Pretty Cool Program
 
-## Development guidelines
+## What's here
 
-* Comments
-  * [Comments](./profile/development-guidelines/comments.md)
-  * [File headers](./profile/development-guidelines/file-headers.md)
-  * [XML documentation](./profile/development-guidelines/xml-documentation.md)
+* [Development guidelines](/profile/guideline/development/README.md)
+* [Documentation guidelines](/profile/guideline/documentation/README.md)
+* [Project guidelines](/profile/guideline/project/README.md)
 
-* Repositories  
-  * [.gitignore](./profile/dotfiles/repositories/.gitignore)
-
-* Source Code
-  * [Classes](./profile/development-guidelines/classes.md)
-  * [Methods](./profile/development-guidelines/methods.md)
-  * [Syntax and formatting](./profile/development-guidelines/syntax-and-formatting.md)
-  * [Versioning](./profile/development-guidelines/versioning.md)
-
-* Other
-  * [Mermaid](./profile/mermaid/mermaid.md)
 
 ## How-To
 
