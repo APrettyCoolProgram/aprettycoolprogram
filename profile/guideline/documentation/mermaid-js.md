@@ -5,6 +5,10 @@
 [Mermaid.js](https://mermaid.js.org/) is a JavaScript-based diagramming and charting tool that renders Markdown-inspired text definitions to create and modify diagrams dynamically.
 
 [Colors](#colors)
+[Fonts](#fonts)
+[Links](#links)
+[Nodes](#nodes)
+[Shapes and workflows](#shapes-and-workflows)
 
 # Colors
 
@@ -368,7 +372,7 @@ flowchart LR
   classDef B9_ stroke:#000000,stroke-width:3px,fill:#000000,color:#FFFFFF
 ```
 
-# Fonts size
+# Fonts
 
 ```mermaid
 flowchart LR
@@ -565,7 +569,7 @@ flowchart LR
     classDef default fill:#000, stroke:#FFF, stroke-width:1px
 ```
 
-# Other
+## Other
 
 ```mermaid
 flowchart LR
