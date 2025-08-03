@@ -2,14 +2,6 @@
 
 ## What's here
 
-### Guidelines
-
-* [Development](/profile/guideline/development/README.md)
-* [Documentation](/profile/guideline/documentation/README.md)
-* [Project](/profile/guideline/project/README.md)
-* [Repository](/profile/guideline/repository/README.md)
-
-
 **Guidelines**: [Development](/profile/guideline/development/README.md) | [Documentation](/profile/guideline/documentation/README.md) | [Project](/profile/guideline/project/README.md) | [Repository](/profile/guideline/repository/README.md)
 
 ## How-To
