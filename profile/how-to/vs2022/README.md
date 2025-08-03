@@ -1,6 +1,4 @@
-# Repository guidelines
-
-### Visual Studio 2022
+# How-To > Visual Studio 2022
 
 * [Setup a Visual Studio 2022 environment](./profile/how-to/visual-studio-community-2022-setup/visual-studio-community-2022-setup.md)
 * [Sandcastle Help File Builder integration]() 
