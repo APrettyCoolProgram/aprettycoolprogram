@@ -10,4 +10,4 @@
 
 ## How-To
 
-* [Visual Studio 2022](/profile/how-to/vs2022/README.md)
+* [Visual Studio 2022](/profile/how-to/vs2022/README.md) stuff
