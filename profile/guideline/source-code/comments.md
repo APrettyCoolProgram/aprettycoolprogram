@@ -2,17 +2,18 @@
 
 # APCP > Guidelines > Source Code > Comments
 
-* [C#](#C# )
+* [C#](#csharp)
 
+## Csharp
 
-## Development comments
+### Development comments
 
 ```csharp
 // Development comments contain important information that should not be removed
 // from the source code, and have a maximum width of 80 characters.
 ```
 
-### Prefixes
+#### Prefixes
 
 Comments may have the following prefixes:
 
@@ -29,7 +30,7 @@ Examples:
 // DEVNOTE If this is changed, things break!
 ```
 
-## Narrative comments
+### Narrative comments
 
 ```csharp
 /* Narrative comments are enclosed with provide provide additional information or 
@@ -41,153 +42,3 @@ Examples:
 // Development comments contain important information that should not be removed
 // from the source code, and have a maximum width of 80 characters.
 ```
-
-### Prefixes
-
-Comments may have the following prefixes:
-
-- `DEVNOTE` is a call-out comment specific to a block of code
-- `DEPRECIATED` indicates that code has been depreciated, but not yet removed
-- `REVIEW` indicates that code should be reviewed and/or refactor
-- `TODO` indicates that there is something to be done.
-
-Examples:
-
-```csharp
-// TODO Do this thing
-
-// DEVNOTE If this is changed, things break!
-```
-
-## Narrative comments
-
-```csharp
-/* Narrative comments are enclosed with provide provide additional information or 
- * narrative about a block of code.
- */
-```## Development comments
-
-```csharp
-// Development comments contain important information that should not be removed
-// from the source code, and have a maximum width of 80 characters.
-```
-
-### Prefixes
-
-Comments may have the following prefixes:
-
-- `DEVNOTE` is a call-out comment specific to a block of code
-- `DEPRECIATED` indicates that code has been depreciated, but not yet removed
-- `REVIEW` indicates that code should be reviewed and/or refactor
-- `TODO` indicates that there is something to be done.
-
-Examples:
-
-```csharp
-// TODO Do this thing
-
-// DEVNOTE If this is changed, things break!
-```
-
-## Narrative comments
-
-```csharp
-/* Narrative comments are enclosed with provide provide additional information or 
- * narrative about a block of code.
- */
-```## Development comments
-
-```csharp
-// Development comments contain important information that should not be removed
-// from the source code, and have a maximum width of 80 characters.
-```
-
-### Prefixes
-
-Comments may have the following prefixes:
-
-- `DEVNOTE` is a call-out comment specific to a block of code
-- `DEPRECIATED` indicates that code has been depreciated, but not yet removed
-- `REVIEW` indicates that code should be reviewed and/or refactor
-- `TODO` indicates that there is something to be done.
-
-Examples:
-
-```csharp
-// TODO Do this thing
-
-// DEVNOTE If this is changed, things break!
-```
-
-## Narrative comments
-
-```csharp
-/* Narrative comments are enclosed with provide provide additional information or 
- * narrative about a block of code.
- */
-```## Development comments
-
-```csharp
-// Development comments contain important information that should not be removed
-// from the source code, and have a maximum width of 80 characters.
-```
-
-### Prefixes
-
-Comments may have the following prefixes:
-
-- `DEVNOTE` is a call-out comment specific to a block of code
-- `DEPRECIATED` indicates that code has been depreciated, but not yet removed
-- `REVIEW` indicates that code should be reviewed and/or refactor
-- `TODO` indicates that there is something to be done.
-
-Examples:
-
-```csharp
-// TODO Do this thing
-
-// DEVNOTE If this is changed, things break!
-```
-
-## Narrative comments
-
-```csharp
-/* Narrative comments are enclosed with provide provide additional information or 
- * narrative about a block of code.
- */
-```
-
-## C#
-
-## Development comments
-
-```csharp
-// Development comments contain important information that should not be removed
-// from the source code, and have a maximum width of 80 characters.
-```
-
-### Prefixes
-
-Comments may have the following prefixes:
-
-- `DEVNOTE` is a call-out comment specific to a block of code
-- `DEPRECIATED` indicates that code has been depreciated, but not yet removed
-- `REVIEW` indicates that code should be reviewed and/or refactor
-- `TODO` indicates that there is something to be done.
-
-Examples:
-
-```csharp
-// TODO Do this thing
-
-// DEVNOTE If this is changed, things break!
-```
-
-## Narrative comments
-
-```csharp
-/* Narrative comments are enclosed with provide provide additional information or 
- * narrative about a block of code.
- */
-```
-

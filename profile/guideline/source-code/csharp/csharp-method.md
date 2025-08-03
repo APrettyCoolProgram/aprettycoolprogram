@@ -1,6 +1,6 @@
 > Last updated August 3, 2025
 
-# APCP > Guidelines > Source Code > C# Methods
+# APCP > Guidelines > Source Code > C# > Methods
 
 # Method calls
 
