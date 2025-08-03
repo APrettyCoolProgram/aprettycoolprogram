@@ -1,10 +1,9 @@
 > Last updated August 3, 2025
 
-# Guidelines > Documentation > Mermaid.js
+# APCP > Guidelines > Documentation > Mermaid.js
 
 [Mermaid.js](https://mermaid.js.org/) is a JavaScript-based diagramming and charting tool that renders Markdown-inspired text definitions to create and modify diagrams dynamically.
 
-### Contents
 [Colors](#colors)
 
 # Colors
@@ -367,4 +366,229 @@ flowchart LR
   classDef B7_ stroke:#7b7d7d,stroke-width:3px,fill:#000000,color:#7b7d7d
   classDef B8_ stroke:#626567,stroke-width:3px,fill:#000000,color:#626567 
   classDef B9_ stroke:#000000,stroke-width:3px,fill:#000000,color:#FFFFFF
+```
+
+# Fonts size
+
+```mermaid
+flowchart LR
+  %% Components
+  FontPoint8@{shape: rounded, label: "8"}
+  FontPoint8String@{shape: brace, label: "font-size:8pt"}
+  FontPoint12@{shape: rounded, label: "12pt (default)"}
+  FontPoint12String@{shape: brace, label: "font-size:12pt"}
+  FontPoint16@{shape: rounded, label: "20"}
+  FontPoint16String@{shape: brace, label: "font-size:16pt"}
+  %% Layout
+  FontPoint8 --> FontPoint8String
+  FontPoint12 --> FontPoint12String
+  FontPoint16 --> FontPoint16String
+  %% Styles
+  classDef FontPoint8 stroke:#ffffff,stroke-width:2px,fill:#000000,color:#ffffff,font-size:8pt
+  class FontPoint8 FontPoint8
+  classDef FontPoint12 stroke:#ffffff,stroke-width:2px,fill:#000000,color:#ffffff,font-size:12pt
+  class FontPoint12 FontPoint12
+  classDef FontPoint16 stroke:#ffffff,stroke-width:2px,fill:#000000,color:#ffffff,font-size:16pt
+  class FontPoint16 FontPoint16
+```
+
+# Links
+
+```mermaid
+flowchart LR
+    %% Components
+    A@{shape: rounded, label: "-.->"}
+    B@{shape: rounded, label: "--->"}
+    C@{shape: rounded, label: "===>"}
+    HiddenA@{shape: rounded}
+    E@{shape: rounded, label: "--o>"}
+    F@{shape: rounded, label: "==o"}
+    HiddenB@{shape: rounded}
+    H@{shape: rounded, label: "--x>"}
+    I@{shape: rounded, label: "==x>"}
+    HiddenC@{shape: rounded}
+    J@{shape: rounded, label: ["~ ~ ~"]}
+    K@{shape: rounded, label: "Invisible!"}
+    L@{shape: rounded, label: "Red line"}
+    M@{shape: rounded, label: "Blue line, red text"}
+    N@{shape: rounded, label: " "}
+    HiddenD@{shape: rounded}
+    %% Layout
+    A -.-> B --> C ==> HiddenA
+    E --o F ==o HiddenB
+    H --x I ==x HiddenC
+    J ~~~ K
+    L --> M -- Text --> N
+    %% Styles
+    classDef Hidden display: none;
+    class HiddenA,HiddenB,HiddenC,HiddenD Hidden
+    linkStyle 8 stroke:#e74c3c,stroke-width:4px,color:red;
+    linkStyle 9 stroke:#3498db ,stroke-width:4px,color:red;
+```
+
+# Nodes
+
+```mermaid
+flowchart LR
+  %% Components
+  Dash3_3@{shape: rounded, label: "Dash outline"}
+  Dash3_3String@{shape: brace, label: "stroke-dasharray: 3 3"}
+  Dash5_5@{shape: rounded, label: "Dash outline"}
+  Dash5_5String@{shape: brace, label: "stroke-dasharray: 5 5"}
+  Dash7_7@{shape: rounded, label: "Dash outline"}
+  Dash7_7String@{shape: brace, label: "stroke-dasharray: 7 7"}
+  %% Layout
+  Dash3_3 --> Dash3_3String
+  Dash5_5 --> Dash5_5String
+  Dash7_7 --> Dash7_7String
+  %% Styles
+  classDef Dash3_3 stroke:#ffffff,stroke-width:3px,stroke-dasharray: 3 3,fill:#000000,color:#ffffff
+  class Dash3_3 Dash3_3
+  classDef Dash5_5 stroke:#ffffff,stroke-width:3px,stroke-dasharray: 5 5,fill:#000000,color:#ffffff
+  class Dash5_5 Dash5_5
+  classDef Dash7_7 stroke:#ffffff,stroke-width:3px,stroke-dasharray: 7 7,fill:#000000,color:#ffffff
+  class Dash7_7 Dash7_7
+```
+
+# Shapes and Workflows
+
+```mermaid
+flowchart TB
+
+    subgraph StartWorkflow ["Start"]
+        direction TB
+        %% Components
+        Start@{shape: circle, label: "Start the workflow\n[circle]"}
+        TerminalStart@{shape: stadium, label: "Start the workflow\n[stadium]"}
+        StartSmall@{shape: sm-circ, label: "Start the workflow\n[sm-circ]"}
+        StartComment@{shape: brace, label: "[sm-circ]"}
+        %% Layout : none
+        %% Styles : global
+    end
+
+    subgraph ProcessWorkflow ["Processes"]
+        direction TB
+        %% Components
+        Process@{shape: rect, label: "Execute a process\n[rect]"}
+        AlternativeProcess@{shape: rounded, label: "Execute an\nalternate process\n[rounded]"}
+        SubProcess@{shape: fr-rect, label: "Execute a\nsub-process\n[fr-rect]"}
+        DividedProcess@{shape: div-rect, label: "Execute a\ndivided process\n[div-rect]"}
+        LinedShadedProcess@{shape: lin-rect, label: "Execute a\nLined/Shaded\nProcess\n[lin-rect]"}
+        TaggedProcess@{shape: tag-rect, label: "Execute a\ntagged\nprocess\n[tag-rect]"}
+        %% Layout : none
+        %% Styles : global
+    end
+    
+    subgraph DocumentationWorkflow ["Documentation"]
+        direction LR
+        %% Components
+        Document@{shape: doc, label: "This is a document\n[doc]"}
+        LinedDocument@{shape: lin-doc, label: "This is a\nlined document\n[lin-doc]"}
+        MultiDocument@{shape: docs, label: "This is a\nmulti-document\n[docs]"}
+        TaggedDocument@{shape: tag-doc, label: "This is a\ntagged document\n[tag-doc]"}
+        %% Layout : none
+        %% Styles : global
+    end
+
+    subgraph StorageWorkflow ["Storage"]
+        direction LR
+        %% Components
+        Database@{shape: cyl, label: "Database\n[cyl]"}
+        DirectAccessStorage@{shape: h-cyl, label: "Direct Access\nStorage\n[h-cyl]"}
+        InternalStorage@{shape: win-pane, label: "Internal\nstorage\n[win-pane]"}
+        %% Layout : none
+        %% Styles : global
+    end
+
+    subgraph InputOutputWorkflow ["Input/Output"]
+        direction LR
+        %% Components
+        DataInputOutputRight@{shape: lean-r, label: "Input\n[lean-r]"}
+        DataInputOutputLeft@{shape: lean-l, label: "Output\n[lean-l]"}
+        ManualInput@{shape: sl-rect, label: "Manual\ninput/output\n[sl-rect]"}
+        %% Layout : none
+        %% Styles : global
+    end
+
+    subgraph OtherWorkflow ["Other"]
+        direction LR
+        %% Components
+        Decision@{shape: diam, label: "Decision\n[diam]"}
+        ManualOperation@{shape: trap-t, label: "Manual\nOperation\n[trap-t]"}
+        PrepareConditional@{shape: hex, label: "Preparation\nconditional/step\n[hex]"}
+        %% Layout : none
+        Decision -- Yes --> ManualOperation
+        Decision -- No --> PrepareConditional
+        %% Styles : global
+    end
+
+    subgraph StopWorkflow ["Stop"]
+        direction TB
+        %% Components
+        Stop@{shape: circle, label: "Stop the workflow\n[circle]"}
+        TerminalStop@{shape: stadium, label: "Stop the workflow\n[stadium]"}
+        StopSmall@{shape: fr-circ, label: "Stop the workflow\n[fr-circ]"}
+        StopComment@{shape: brace, label: "[fr-circ]"}
+        %% Layout : none
+        %% Styles : global
+    end
+
+    %% Layout
+    StartWorkflow --> ProcessWorkflow
+    ProcessWorkflow --> DocumentationWorkflow
+    ProcessWorkflow --> StorageWorkflow
+    ProcessWorkflow --> InputOutputWorkflow
+    ProcessWorkflow --> OtherWorkflow
+    DocumentationWorkflow --> StopWorkflow
+    StorageWorkflow --> StopWorkflow
+    InputOutputWorkflow --> StopWorkflow
+    OtherWorkflow --> StopWorkflow
+    %% Styles
+    classDef default fill:#000, stroke:#FFF, stroke-width:1px
+```
+
+## Comments and text
+
+```mermaid
+flowchart LR
+    %% Components
+    Comment@{shape: brace, label: "This is a left-bracket comment\n[brace]"}
+    CommentRight@{shape: brace-r, label: "This is a right-bracket comment\n[brace-r]"}
+    CommentBoth@{shape: braces, label: "This is a normal comment\n[braces]"}
+    TextBlock@{shape: text, label: "This is a block of text\n[text]"}
+    %% Layout
+    Comment
+    CommentRight
+    CommentBoth
+    TextBlock
+    %% Styles
+    classDef default fill:#000, stroke:#FFF, stroke-width:1px
+```
+
+# Other
+
+```mermaid
+flowchart LR
+    %% Components
+    Card@{shape: card, label: "Card\n[card]"}
+    Collate@{shape: hourglass, label: "Collate\noperation\n[hourglass]"}
+    ComLink@{shape: bolt, label: "Communication\nlink\n[bolt]"}
+    Delay@{shape: delay, label: "Delay\n[delay]"}
+    Display@{shape: curv-trap, label: "Display\n[curv-trap]"}
+    LoopLimit@{shape: notch-pent, label: "Loop limit\n[notch-pent]"}
+    Odd@{shape: odd, label: "Odd\n[odd]"}
+    PaperTape@{shape: flag, label: "Paper tape\n[flag]"}
+    PriorityAction@{shape: trap-b, label: "Priority\naction\n[trap-b]"}
+    Summary@{shape: cross-circ, label: "Summary\n[cross-circ]"}
+    
+    %% Layout
+    Card --> Collate --> ComLink
+    Delay -->Display
+    Event
+    LoopLimit
+    Odd
+    PaperTape --> PriorityAction
+    Summary
+    %% Styles
+    classDef default fill:#000, stroke:#FFF, stroke-width:1px
 ```
