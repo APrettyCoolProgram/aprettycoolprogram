@@ -8,6 +8,7 @@
 * [Documentation](/profile/guideline/documentation/README.md)
 * [Projects](/profile/guideline/project/README.md)
 * [Repositories](/profile/guideline/repository/README.md)
+* [Source code](/profile/guideline/source-code/README.md)
 
 ## How-To
 

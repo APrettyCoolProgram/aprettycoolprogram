@@ -1,4 +1,4 @@
 # Documentation guidelines
 
-* [Mermaid](mermaid.md)
-* [XML documentation](xml-documentation.md)
+* [Mermaid.js](mermaid/README.md)
+* [C# XML documentation](xml-documentation.md)
