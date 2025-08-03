@@ -1,3 +1,0 @@
-# Repository guidelines
-
-* [.gitignore](gitignore)
