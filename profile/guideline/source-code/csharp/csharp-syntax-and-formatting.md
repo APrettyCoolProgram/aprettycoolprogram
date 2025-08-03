@@ -1,3 +1,11 @@
+<!--
+    This should be broken down into smaller parts/files.
+-->
+
+> Last updated August 3, 2025
+
+# APCP > Guidelines > Source Code > C# Methods
+
 # Variables
 
 - Variables are declared in their own block at the top of a method.

@@ -1,3 +1,5 @@
-# Versioning
+> Last updated August 3, 2025
 
-A Pretty Cool Program uses [Symantic Versioning](https://semver.org/)
+# APCP > Guidelines > Projects > Versioning
+
+* [Symantic Versioning](https://semver.org/)

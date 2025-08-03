@@ -1,3 +1,3 @@
-# Repository guidelines
+# APCP > Guidelines > Repositories
 
 * [.gitignore](gitignore)

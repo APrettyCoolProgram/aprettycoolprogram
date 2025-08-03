@@ -1,7 +1,8 @@
 > Last updated August 3, 2025
 
-XML documentation guidelines
+# APCP > Guidelines > Documentation > C# XML Documentation
 
+CONTENTS
 - [XML documentation guidelines](#xml-documentation-guidelines)
   - [Classes](#classes)
     - [Class methods](#class-methods)
