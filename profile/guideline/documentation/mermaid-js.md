@@ -4,11 +4,11 @@
 
 [Mermaid.js](https://mermaid.js.org/) is a JavaScript-based diagramming and charting tool that renders Markdown-inspired text definitions to create and modify diagrams dynamically.
 
-[Colors](#colors)
-[Fonts](#fonts)
-[Links](#links)
-[Nodes](#nodes)
-[Shapes and workflows](#shapes-and-workflows)
+[Colors](#colors)  
+[Fonts](#fonts)  
+[Links](#links)  
+[Nodes](#nodes)  
+[Shapes and workflows](#shapes-and-workflows)  
 
 # Colors
 
